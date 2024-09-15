@@ -1,0 +1,213 @@
+<!doctype html>
+<!-- {% load static %} -->
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="../styles/style.css" href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+  <link href="../styles/footer.css" rel="stylesheet" href="{% static 'css/footer.css' %}">
+
+
+  <title>Московский политехнический университет</title>
+</head>
+
+<body>
+
+  <header>
+   <!-- {% include "includes/header.html" %} -->
+  <!-- {% load static %} -->
+  <link rel="stylesheet" href="../styles/style.css" href="{% static 'css/style.css' %}">
+  <div class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <img class="header__logo-img" src="../image/logooo.svg" src="{% static 'image/logo.png' %}" alt="Website Logo">
+        </div>
+        <div class="header__title">Музей Московского Политеха</div>
+        <nav class="header__nav">
+          <ul class="menu">
+            <li class="menu__dropdown">
+              <a class="menu__link" href="{% url 'homepage:homepage' %}">Главная</a>
+            </li>
+  
+            <li class="menu__dropdown">
+              <a class="menu__link" href="Ссылка на страницу">Вуз</a>
+              <div class="menu__dropdown-content">
+                <a class="menu__dropdown-link" href="{% url 'history:history' %}">История возникновения</a>
+                <a class="menu__dropdown-link" href="#">Внеучебные организации</a>
+                <a class="menu__dropdown-link" href="#">Достижения и успехи</a>
+              </div>
+            </li>
+  
+            <li class="menu__dropdown">
+              <a class="menu__link" href="Ссылка на страницу">Корпуса</a>
+              <div class="menu__dropdown-content">
+                <a class="menu__dropdown-link" href="#">Корпус на Большой Семеновской</a>
+                <a class="menu__dropdown-link" href="#">Корпус на Прянишникова</a>
+                <a class="menu__dropdown-link" href="#">Корпус на Павла Корчагина</a>
+                <a class="menu__dropdown-link" href="#">Корпус на Автозаводской</a>
+              </div>
+            </li>
+  
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  
+    <section class="hero">
+
+      <div class="hero__inner">
+        <h1 class="hero__title">Московский политехнический университет — многопрофильное высшее учебное заведение.</h1>
+        <p class="hero__subtitle">Участник программы «Приоритет 2030».
+          Учредителем университета является Министерство науки и высшего образования Российской Федерации</p>
+      </div>
+
+    </section>
+
+  </header>
+
+
+  <main>
+
+    <div class="container">
+
+      <div class="about">
+        <div class="about__image-container mb-2">
+          <img class="about__image image" src="../image/about1.jpg" src="{% static 'image/about1.jpg' %}" alt="">
+        </div>
+        <div class="about__info-container">
+          <h2 class="title">Интерактивный музей</h2>
+          <div class="about__text mb-2">
+            <p>– это уникальное пространство, которое объединяет науку, искусство и технологии. Здесь каждый посетитель
+              имеет возможность окунуться в захватывающий мир современных технических достижений и открытий.Входя в
+              интерактивный музей, посетители попадают в мир удивительных экспонатов и мультимедийных инсталляций,
+              которые
+              позволяют им взглянуть на науку с новой, неожиданной стороны. Разнообразные экспонаты, презентации и
+              интерактивные стенды рассказывают о передовых разработках, проведенных исследованиях и технологических
+              процессах, применяемых в Московском политехе.</p>
+            <p>Одним из самых популярных объектов экспозиции является интерактивная "Научная лаборатория", где
+              посетители
+              могут самостоятельно проводить опыты и эксперименты, развивая свои научные навыки и способности. Здесь
+              маленькие и большие посетители могут не только наблюдать, но и принимать активное участие в создании
+              научных
+              открытий.</p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="detail">
+        <a href="#" class="detail-grid-a  ">
+          <div class="detail__col1">
+            <div class="content">
+              <p class="content__title">Интересный факт</p>
+              <div class="content__text text">
+                <p>Русский поэт, драматург и прозаик, заложивший основы русского реалистического направления, литературный
+                  критик и теоретик литературы</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="detail-grid-a  ">
+          <div class="detail__col2">
+            <div class="content">
+              <p class="content__title">А вы знали что?</p>
+              <div class="content__text text">
+                <p>Русский поэт, драматург и прозаик, заложивший основы русского реалистического направления, литературный
+                  критик и теоретик литературы. Один из самых авторитетных литературных деятелей первой трети XIX века.
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        
+        <a href="#" class="detail-grid-a  ">
+          <div class="detail__col3">
+            <div class="content">
+              <p class="content__title">История</p>
+              <div class="content__text text">
+                <p>Русский поэт, драматург и прозаик, заложивший основы русского реалистического направления, литературный
+                  критик и теоретик литературы. Один из самых авторитетных литературных деятелей первой трети XIX века.
+                </p>
+              </div>
+            </div>
+          </div>  
+        </a>
+
+        <a href="#" class="detail-grid-a  ">
+          <div class="detail__col4">
+            <div class="content">
+              <p class="content__title">История</p>
+              <div class="content__text text">
+                <p>Русский поэт, драматург и прозаик, заложивший основы русского реалистического направления, литературный
+                  критик и теоретик литературы. Один из самых авторитетных литературных деятелей первой трети XIX века.
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        
+      </div>
+
+      <div class="info">
+        <div class="info__text-container">
+          <p class="info__title">Погрузись в историю</p>
+          <div class="info__text text">
+            <p>
+              Увлекательные экскурсии по музею проводят высококвалифицированные специалисты, которые с радостью делятся
+              своими знаниями и опытом с гостями. Каждая экскурсия рассказывает зрителям о конкретной теме – от
+              энергетики и механики до информационных технологий и робототехники.Важной особенностью интерактивного
+              музея Московского политеха является его открытость и доступность. Все экспозиции созданы таким образом,
+              чтобы посетителям было легко понять их содержание и принять участие во всех представленных интерактивных
+              событиях.
+            </p>  
+          </div>
+        </div>
+
+        <div class="info__image-container" style="align-items: end">
+          <img class="image" src="../image/photo3.jpg"src="{% static 'image/photo3.jpg' %}" alt="">
+          <br>
+          <div class="about__footer">
+            <a class="about__link" href="#" style="gap:10px"><strong>Узнать подробнее</strong></a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </main>
+<!-- {% include "includes/footer.html" %} -->
+<link href="../styles/footer.css" rel="stylesheet" href="{% static 'css/footer.css' %}">
+<footer>
+  <div class="left-side">
+    <div class="contact-info">
+      <img src="../image/Phone (1).svg" src="{% static 'image/phone.png'%}" alt="Phone Icon">
+      <a> +7 (123) 456-78-90</a>
+    </div>
+    <div class="contact-info">
+      <img src="../image/logo.png" src="{% static 'image/logo.png'%}" alt="Website Logo">
+      <a href="https://www.mospolytech.com" style="margin-left: 8px;">www.mospolytech.com</a>
+    </div>
+    <div class="text-footer">
+      <p style="margin-left: 3px;Ё">© 2023 федеральное государственное автономное образовательное учреждение высшего образования «Московский политехнический университет»</p>
+    </div>
+    
+  </div>
+  <div class="right-side">
+    <a href="#"><img src="../image/Vector.svg" src="{% static 'image/vk-icon.png'%}" alt="ВКонтакте"></a>
+    <a href="#"><img src="../image/Vector (1).svg" src="{% static 'image/telegram-icon.png'%}" alt="Telegram"></a>
+    <a href="#"><img src="../image/Vector (2).svg" src="{% static 'image/youtube-icon.png'%}" alt="YouTube"></a>
+    <a href="mailto:назвпочты@почта.com"><img src="../image/Vector (3).svg" src="{% static 'image/mail-icon.png'%}" alt="Email"></a>
+  </div>
+</footer>
+
+
+</body>
+
+</html>

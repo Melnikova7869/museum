@@ -1,0 +1,123 @@
+<!doctype html>
+<!-- {% load static %} -->
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="../styles/style.css"  href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+  <link href="../styles/footer.css" rel="stylesheet" href="{% static 'css/footer.css' %}">
+
+
+
+
+  <title>Московский политехнический университет</title>
+</head>
+
+<body>
+
+
+<header>
+   <!-- {% load static %} -->
+  <link rel="stylesheet" href="../styles/style.css" href="{% static 'css/style.css' %}">
+  <div class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <img class="header__logo-img" src="../image/logo.png" src="{% static 'image/logo.png' %}" alt="Website Logo">
+        </div>
+        <div class="header__title">Музей Московского Политеха</div>
+        <nav class="header__nav">
+          <ul class="menu">
+            <li class="menu__dropdown">
+              <a class="menu__link" href="{% url 'homepage:homepage' %}">Главная</a>
+            </li>
+  
+            <li class="menu__dropdown">
+              <a class="menu__link" href="Ссылка на страницу">Вуз</a>
+              <div class="menu__dropdown-content">
+                <a class="menu__dropdown-link" href="{% url 'history:history' %}">История возникновения</a>
+                <a class="menu__dropdown-link" href="{% url 'persons:persons' %}">Известные люди</a>
+                <a class="menu__dropdown-link" href="#">Внеучебные организации</a>
+                <a class="menu__dropdown-link" href="#">Достижения и успехи</a>
+              </div>
+            </li>
+  
+            <li class="menu__dropdown">
+              <a class="menu__link" href="Ссылка на страницу">О нас</a>
+              <div class="menu__dropdown-content">
+                <a class="menu__dropdown-link" href="#">Подпункт 1</a>
+                <a class="menu__dropdown-link" href="#">Подпункт 2</a>
+                <a class="menu__dropdown-link" href="#">Подпункт 3</a>
+                <a class="menu__dropdown-link" href="#">Подпункт 3</a>
+              </div>
+            </li>
+  
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  
+  </header>
+
+
+  <main>
+
+    <div class="bg bg_1">
+      <div class="container">
+
+        <div class="hero2">
+
+          <div class="hero2__text">
+            <h1 class="title">Знаковые личности и их вклад в образовании
+              Политеха</h1>
+            <p class="hero2__lead">
+              Знаковые личности и их вклад в образовании
+              ПолитехаДобро пожаловать на нашу страницу, посвящённую важным личностям, которые оставили свой след в
+              истории ПОЛИТЕХА. В нашей коллекции вы найдете фотографии Мейена Христиана Христиановича, главного
+              распорядителя железнодорожных дел, Ивана Ивановича Артоболевского, выдающегося советского ученого-механика
+              и
+              других личностей, которые внесли свой вклад.
+            </p>
+
+            <a class="button" href="{% url 'persons:persons_detailed' %}">Подробнее</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </main>
+
+   <!-- {% include "includes/footer.html" %} -->
+
+   <footer>
+     <div class="left-side">
+       <div class="contact-info">
+   
+         <p><img src="../image/phone.png" src="{% static 'image/phone.png'%}" alt="Phone Icon"> +7 (123) 456-7890</p>
+       </div>
+       <a href="https://www.mospolytech.com">www.mospolytech.com</a>
+       <img src="../image/logo.png" src="{% static 'image/logo.png'%}" alt="Website Logo">
+       <p>© 2023 федеральное государственное автономное образовательное учреждениевысшего образования «Московский политехнический университет»,Московский Политех</p>
+     </div>
+     <div class="right-side">
+       <!-- <a href="#"><img src="../image/ok-icon.png" src="{% static 'image/ok-icon.png'%}" alt="Одноклассники"></a> -->
+       <a href="#"><img src="../image/vk-icon.png" src="{% static 'image/vk-icon.png'%}" alt="ВКонтакте"></a>
+       <a href="#"><img src="../image/telegram-icon.png" src="{% static 'image/telegram-icon.png'%}" alt="Telegram"></a>
+       <a href="#"><img src="../image/youtube-icon.png" src="{% static 'image/youtube-icon.png'%}" alt="YouTube"></a>
+       <!-- <a href="mailto:назвпочты@почта.com"><img src="../image/mail-icon.png" src="{% static 'image/mail-icon.png'%}" alt="Email"></a> -->
+     </div>
+   </footer>
+
+</body>
+
+</html>

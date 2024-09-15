@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+.blok{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    background-color: #ded7fa;
+    padding: 30px;
+    height: 450px; 
+    border: black 1px solid;
+}
+.text-a{
+    font-size: 35px;
+    color: #483B78;
+    font-weight: 700;
+}
+.text p{
+    margin-top: 15px;
+    font-size: 22px;
+    color: black;
+    font-weight: 400;
+
+}
+.button-a{
+    margin-left: 40px;
+    color:#483B78;  
+    font-size: 30px;
+}
+.blok img {
+    margin-left: 35px;
+    width: 500px;
+}

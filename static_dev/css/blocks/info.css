@@ -1,0 +1,32 @@
+.info {
+  display: grid;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.info__text {
+  line-height: 1.5;
+}
+
+.info__title {
+  color: #483B78;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .info {
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 4rem;
+  }
+
+  .info__text-container {
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .info__title {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,71 @@
+.about {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.about__link {
+  color: #6251A2;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: 0.3s;
+  padding-right: 100px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.about__link::after { 
+  display: none;
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  right: -10px;
+  top: 0;
+  background-image: url(../../img/photoArrow.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.about__link:hover {
+  color: #342277;
+}
+
+.about__text {
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) { 
+  .about {
+    display: flex;
+  }
+
+  .about__image-container  {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-right: 2rem;
+  }
+
+  .about__text {
+    font-size: 1.4rem;
+  }
+
+  .about__link::after { 
+    display: block;
+  }
+}
+
+
+@media (min-width: 1200px) { 
+
+  .about {
+    margin-bottom: 3rem;
+  }
+
+  .about__link {
+    font-size: 2.2rem;
+  }
+}
+
