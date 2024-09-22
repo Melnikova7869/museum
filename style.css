@@ -126,10 +126,7 @@ h1, h2, h3, h4, h5, p {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
   max-width: 1320px;
 }
 
@@ -689,17 +686,16 @@ h1, h2, h3, h4, h5, p {
   }
   
   .step-hor__content {
-    padding-bottom: 3rem;
     font-family: 'Raleway', sans-serif;
     color: rgba(0, 0, 0, 0.61);
     font-size: 25px;
-    padding-left: 5rem;
-    padding-top: 3rem;
+    width: 600px;
+    margin: auto;
   }
   
-  .step-hor__content_1 {
+  /* .step-hor__content_1 {
     padding-right: 3rem;
-  }
+  } */
   
   .step-hor__block_2 {
     padding-top: 5rem;
