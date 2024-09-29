@@ -71,7 +71,7 @@
     }
   
     .about__text {
-      font-size: 1.4rem;
+      font-size: 2.5rem;
     }
   
     .about__link::after { 
@@ -129,7 +129,7 @@
  */
 h1, h2, h3, h4, h5, p {
   margin-top: 0;
-  color: #483B78;
+  color: #71506F;
 }
 
 .container {
@@ -166,10 +166,11 @@ h1, h2, h3, h4, h5, p {
   display: block;
   max-width: 100%;
   height: auto;
+  border-radius: 30px;
 }
 
 .title {
-  color: #6251A2;
+  color: #71506F;
   text-shadow: 2px 2px 2px black;
   font-size: 2rem;
   line-height: 1.1;
@@ -182,7 +183,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 .text {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 1200px) { 
@@ -219,7 +220,7 @@ h1, h2, h3, h4, h5, p {
   border-radius: 3rem;
   background-color: white;
   border: 2px solid #483B78;
-  height: 25rem;
+  height: 28rem;
 }
 .section-h{
   margin-left: 2rem;
@@ -234,7 +235,7 @@ h1, h2, h3, h4, h5, p {
 }
   
   .content__title {
-    color: #BDAEF4;
+    color: #71506F;
     text-shadow: 2px 2px 2px #483B78;
     font-size: 1.3rem;
     margin-bottom: 1rem;
@@ -478,7 +479,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 .hero__title {
-  color: #dddeff;
+  color: white;
   font-weight: bold;
   font-size: 1.4rem;
   margin-top: 0;
@@ -568,11 +569,13 @@ h1, h2, h3, h4, h5, p {
   
   .info__text {
     line-height: 1.5;
+    font-size: 2rem
   }
   
   .info__title {
-    color: #483B78;
-    font-size: 1.4rem;
+    /*color: #483B78; */
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px #483B78;
     font-weight: bold;
   }
   
@@ -963,4 +966,6 @@ button:focus {
   gap: 15px;
   margin: 20px;
 }
+
+
 
