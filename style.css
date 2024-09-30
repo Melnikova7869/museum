@@ -25,6 +25,9 @@
 .about {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
 }
 
 .about__link {
@@ -57,6 +60,7 @@
 
 .about__text {
   line-height: 1.4;
+  font-size: 2.7rem;
 }
 
 /* @media (min-width: 768px) { 
@@ -167,10 +171,11 @@ p {
   display: block;
   max-width: 100%;
   height: auto;
+  border-radius: 30px;
 }
 
 .title {
-  color: #6251A2;
+  color: #71506F;
   text-shadow: 2px 2px 2px black;
   font-size: 2rem;
   line-height: 1.1;
@@ -221,7 +226,7 @@ p {
   border-radius: 3rem;
   background-color: white;
   border: 2px solid #483B78;
-  height: 25rem;
+  height: 32rem;
 }
 
 .section-h {
@@ -238,9 +243,9 @@ p {
 }
 
 .content__title {
-  color: #BDAEF4;
+  color: #71506F;
   text-shadow: 2px 2px 2px #483B78;
-  font-size: 1.3rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
   padding-top: 20px;
   margin-left: 20px;
@@ -248,6 +253,7 @@ p {
 
 .content__text {
   line-height: 1.4;
+  font-size: 1.8rem;
 }
 
 @media (min-width: 1200px) {
@@ -468,7 +474,8 @@ header {
 .hero {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  min-height: 300px;
+  min-height: 700px;
+  width: 100%;
   background-image: url(/image/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -493,12 +500,13 @@ header {
 .hero__title {
   color: #dddeff;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 3rem;
   margin-top: 0;
 }
 
 .hero__subtitle {
   color: white;
+  font-size: 1.5rem;
 }
 
 .hero2 {
@@ -542,12 +550,14 @@ header {
 
 .info__text {
   line-height: 1.5;
+  font-size: 2rem;
 }
 
 .info__title {
-  color: #483B78;
+  color: #71506F;
   font-size: 1.4rem;
   font-weight: bold;
+  text-shadow: 2px 2px 2px black
 }
 
 @media (min-width: 768px) {
