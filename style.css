@@ -734,32 +734,26 @@ header {
   background-color: rgb(151, 174, 216);
 }
 
-.cover__image {
-  position: relative;
-  width: 100%;
-  opacity: 36%;
-}
-
 .cover__background {
   background-color: rgba(217, 217, 217, 0.82);
   z-index: -100;
   height: 116.5vh;
   width: 100%;
-  position: absolute;
 }
 
 .cover {
   width: 100%;
+  background-image: url(image/background_vov.png);
 }
 
 .cover__title {
   font-family: Yuji Syuku;
   letter-spacing: 0.3em;
-  font-size: 54px;
+  font-size: 6rem;
   color: #71506F;
-  top: 200px;
-  left: 103px;
-  position: absolute;
+  padding-top: 100px;
+  /* margin-top: 200px; */
+  margin-left: 103px;
 }
 
 .cover__button {
@@ -768,7 +762,6 @@ header {
   color: #71506F;
   top: 200px;
   left: 103px;
-  position: absolute;
 }
 
 .cover__text,
@@ -781,12 +774,13 @@ header {
 }
 
 .cover__text {
-  position: absolute;
   font-size: 2.5rem;
   width: 914px;
-  height: 520px;
-  top: 336px;
-  left: 92px;
+  height: 720px;
+  /* margin-top: 336px; */
+  padding-top: 180px;
+  margin-left: 103px;
+  /* margin-bottom: 230px;
 }
 
 .describe {
