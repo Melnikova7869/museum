@@ -228,7 +228,7 @@ body {
 /* .tooltip {
   display: none;
   position: absolute;
-  top: -30px; /* Позиция подсказки относительно кнопки */
+  top: -30px; 
   left: 50%;
   transform: translateX(-50%);
   background-color: black;
@@ -237,7 +237,7 @@ body {
   border-radius: 5px;
   font-size: 14px;
   white-space: nowrap;
-} */
+}  */
 
 .window {
   display: none;
