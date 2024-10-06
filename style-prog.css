@@ -4,14 +4,14 @@
 .blok{
     display: grid;
     grid-template-columns: 2.5fr 1fr;
-    background-color: #ded7fa;
+    background-color: #e9eaf3;
     padding: 30px;
     height: 450px; 
     border: black 1px solid;
 }
 .text-a{
     font-size: 35px;
-    color: #483B78;
+    color: #4A2D41;
     font-weight: 700;
 }
 .text p{
@@ -23,10 +23,16 @@
 }
 .button-a{
     margin-left: 40px;
-    color:#483B78;  
+    color:#4A2D41;  
     font-size: 30px;
 }
 .blok img {
     margin-left: 35px;
     width: 500px;
+}
+.img_1,
+.img_2,
+.img_3
+{
+    border-radius: 30px;
 }
