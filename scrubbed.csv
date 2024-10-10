@@ -1,0 +1,11 @@
+datetime,shape,duration (seconds),country
+2023/01/01,circle,120,USA
+2023/02/15,triangle,300,Canada
+2023/03/10,triangle,180,USA
+2023/03/11,square,240,Mexico
+2023/04/25,circle,360,Canada
+2023/05/05,hexagon,480,USA
+2023/06/17,triangle,600,Mexico
+2023/07/23,circle,720,Canada
+2023/08/30,square,900,Mexico
+2023/09/12,hexagon,1080,USA

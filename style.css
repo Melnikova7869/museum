@@ -31,7 +31,7 @@
 }
 
 .about__link {
-  color: #6251A2;
+  color: #772277;
   text-transform: uppercase;
   font-size: 1.2rem;
   text-decoration: none;
@@ -55,7 +55,7 @@
 
 
 .about__link:hover {
-  color: #342277;
+  color: #772277;
 }
 
 .about__text {
@@ -213,7 +213,7 @@ body {
   border-radius: 3rem;
   background-color: white;
   border: 2px solid #483B78;
-  height: 32rem;
+  height: 38rem;
 }
 
 .section-h {
@@ -251,10 +251,10 @@ body {
 }
 
 .section-text {
-  width: 1100px;
   margin-left: 2rem;
   margin-bottom: 5rem;
   font-size: 3.4rem;
+  color: #4A2D41;
 }
 
 .content__title {
@@ -330,6 +330,21 @@ body {
   display: grid;
   gap: 2rem;
 
+}
+
+.h1_model {
+  font-size: 4rem;
+  color: #71506F;
+  text-align: center;
+  padding: 20px;
+}
+
+.p_model {
+  font-size: 2.6rem;
+  padding: 10px;
+  margin-bottom: 30px;
+  color: #4A2D41;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -667,7 +682,7 @@ header {
   font-family: 'Raleway', sans-serif;
   font-size: 23px;
   line-height: 30px;
-  color: rgba(0, 0, 0, .69);
+  color: #4A2D41;;
 }
 
 .step-hor {
@@ -677,7 +692,7 @@ header {
 }
 
 .step-hor__block_1 {
-  border-right: 10px solid #BEAFF4;
+  border-right: 10px solid #71506F;;
 }
 
 .step-hor__title_1 {
@@ -685,14 +700,14 @@ header {
 }
 
 .step-hor__title-inner_2 {
-  border-bottom: 10px solid #BEAFF4;
+  border-bottom: 10px solid #71506F;;
   padding-left: 5rem;
   padding-bottom: 1rem;
   padding-right: 4rem;
 }
 
 .step-hor__title {
-  color: rgba(189, 174, 244, 1);
+  color: #654461;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 45px;
@@ -718,12 +733,6 @@ header {
 
 .step-hor__block_1 {
   padding-top: 18rem;
-}
-
-@media (min-width: 768px) {
-  /*  .step-hor {
-      grid-template-columns: 1fr 1fr;
-    } */
 }
 
 .describe,
@@ -906,24 +915,29 @@ button:focus {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   gap: 2rem;
-  margin-left: 55px;
 }
 
-.grid-item {
+/* .grid-item {
   width: 400px;
   height: 300px;
-  background-color: rgb(151, 174, 216);
+  background-color: #A09DBA;
 }
-
+ */
 #wet {
   margin: 50px;
+}
+
+iframe {
+  width: 400px;
+  height: 330px;
 }
 
 .grid-iter {
   font-size: 20px;
   height: 50px;
+  width: 400px;
   text-align: center;
-  background-color: #6251a2;
+  background-color: #654461;
   color: white;
 }
 
