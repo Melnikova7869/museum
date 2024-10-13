@@ -544,6 +544,29 @@ header {
   display: flex;
 }
 
+#toggleButton {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#toggleButton .hover-text {
+  display: none;
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    border-radius: 30px;
+    background-color: #333;
+    color: white;
+    padding: 7px;
+    font-size: 22px;
+}
+
+#toggleButton:hover .hover-text {
+  display: inline;
+}
+
+
 .hero2__image {
   display: block;
   width: 300px;

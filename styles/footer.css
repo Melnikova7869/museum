@@ -22,10 +22,7 @@ a {
 
 .contact-info {
   display: flex;
-  justify-content: space-between;
   align-content: items-center;
-  width: 210px;
-  height: 24px;
   margin-left: 0;
   text-decoration: none;
 }
@@ -35,4 +32,8 @@ a {
 .right-side img {
   height: 48px;
   margin-left: 10px;
+}
+
+.contact-info-logo {
+  height: 30px;
 }

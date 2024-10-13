@@ -1,196 +1,427 @@
-<!doctype html>
-<!-- {% load static %} -->
-<html lang="ru">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link href="style.css"  href="{% static 'style.css' %}" rel="stylesheet" type="text/css">
-  <link href="../styles/footer.css" rel="stylesheet" href="{% static 'css/footer.css' %}">
-
-  <title>Московский политехнический университет</title>
-</head>
-
-<body>
-  <header>
-    <div class="header">
-      <div class="container">
-        <div class="header__inner">
-          <div class="header__logo">
-            <img class="header__logo-img" src="image/logo_1.svg" src="{% static 'image/logo.png' %}" alt="Website Logo">
-          </div>
-          <div class="header__title">Музей Московского Политеха</div>
-          <nav class="header__nav">
-            <ul class="menu">
-              <li class="menu__dropdown">
-                <a class="menu__link" href="index.html">Главная</a>
-              </li>
-    
-              <li class="menu__dropdown">
-                <a class="menu__link">Вуз</a>
-                <div class="menu__dropdown-content">
-                  <a class="menu__dropdown-link" href="history.html">История возникновения</a>
-                  <a class="menu__dropdown-link" href="persons.html">Знаковые личности</a>
-                  <a class="menu__dropdown-link" href="progress.html">Достижения</a>
-                  <a class="menu__dropdown-link" href="model.html">3D модели</a>
-                  <a class="menu__dropdown-link" href="vovv.html">Вуз во времена ВОВ</a>
-                </div>
-              </li>
-    
-              <li class="menu__dropdown">
-                <a class="menu__link">Корпуса</a>
-                <div class="menu__dropdown-content">
-                  <a class="menu__dropdown-link" href="#">Корпус на Большой Семеновской</a>
-                  <a class="menu__dropdown-link" href="#">Корпус на Прянишникова</a>
-                  <a class="menu__dropdown-link" href="#">Корпус на Павла Корчагина</a>
-                  <a class="menu__dropdown-link" href="#">Корпус на Автозаводской</a>
-                  <a class="menu__dropdown-link" href="#">Корпус на Михалковской</a>
-                </div>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-
-
-  <main>
-
-    <div class="container pt-2">
-      <h1 class="title">Знаковые личности и их вклад в образовании Политеха</h1>
-
-      <div class="fon-violet">
-        <div class="grid grid_size-col-2 mb-5">
-
-          <div class="grid_col">
-  
-            <div class="person">
-              <img class="person__image image" src="../image/1.png" src="{% static 'image/1.png' %}">
-              <p class="person__title">Мейен Христиан Христианович</p>
-              <p class="person__description">
-                прошёл путь от механика до старшего инженера. Затем его заметили высшие руководители, что позволило ему
-                продвинуться на высшие посты и стать главным распорядителем железнодорожных дел. Его реформы помогли
-                существенно улучшить транспортную систему России.
-              </p>
-              <div class="describe"> Железнодорожный деятель, основатель комиссариатской технической
-                школы <span class="bold-text"> Христиан Христианович Мейен </span>принёс немало пользы нашему Отечеству. В 1865 году 
-                инженером Мейеном на средства Петра Ионовича Губонина, богатого железнодорожного 
-                предпринимателя, была создана ремесленная школа для детей из малообеспеченных семей.
-                Спустя год, после покушения на Александра II, школа, в честь спасшего императора Осипа 
-                Комиссарова, стала именоваться Комиссаровской.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="styles/footer.css"
+      rel="stylesheet"
+      href="{% static 'css/footer.css' %}"
+    />
+    <title>Знаковые личности и их вклад в образование Политеха</title>
+    <style>
+      .text-inner-shadow {
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5),
+          -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5),
+          -1px 1px 0 rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body class="text-black/70">
+    <header>
+      <div class="fixed inset-0 w-full">
+        <nav
+          class="flex w-full bg-[#E1E4E9] text-[#4A2D41] justify-between px-8 py-4"
+        >
+          <a class="flex items-center gap-4" href="/museum/index.html">
+            <img
+              src="image/logo_1.svg"
+              src="{% static 'image/logo.png' %}"
+              alt="Website Logo"
+            />
+            <div class="text-3xl">Музей Московского Политеха</div>
+          </a>
+          <ul class="flex items-center gap-10">
+            <li>
+              <a
+                class="flex items-center duration-200 font-semibold hover:text-[#A09DBA] text-3xl hover:text-inner-shadow"
+                href="index.html"
+                >Главная</a
+              >
+            </li>
+            <li class="relative group">
+              <h4
+                class="flex items-center font-semibold duration-200 cursor-pointer hover:text-[#A09DBA] text-3xl hover:text-inner-shadow"
+              >
+                Вуз
+              </h4>
+              <div
+                class="absolute -left-28 text-2xl hidden group-hover:block rounded-md bg-white shadow-lg"
+              >
+                <a class="block px-4 py-2" href="history.html"
+                  >История возникновения</a
+                >
+                <a class="block px-4 py-2" href="persons.html"
+                  >Знаковые личности</a
+                >
+                <a class="block px-4 py-2" href="progress.html">Достижения</a>
+                <a class="block px-4 py-2" href="model.html">3D модели</a>
+                <a class="block px-4 py-2" href="vovv.html"
+                  >Вуз во времена ВОВ</a
+                >
               </div>
-              <p class="person__subtitle">Роль в истории политеха:</p>
-              <p class="person__description">
-                Основатель Комиссаровской технической школы в Москве. В сентябре 1865 года инженер основал Императорское
-                Комиссаровское техническое училище. С 1865 по 1873 год был директором
-              </p>
-  
-            </div>
-  
-          </div>
-  
-  
-          <div class="grid_col">
-  
-            <div class="person">
-              <img class="person__image image" src="../image/2.png" src="{% static 'image/2.png' %}">
-              <p class="person__title">Иван Иванович Артоболевский</p>
-              <p class="person__description">
-                прошел образование в Единой трудовой школе, где позже стал одним из ее выдающихся выпускников.
-                В 1926 году он окончил машиностроительный факультет Сельскохозяйственной
-                академии имени К. А. Тимирязева, получив звание инженера-агронома по
-                сельскохозяйственному машиностроению.
-              </p>
-              <div class="describe2"> Начиная с 1928 года,<span class="bold-text"> Иван Иванович Артоболевский </span> преподавал в различных вузах Москвы, включая Московский электромеханический институт и Московский авиационный институт, где возглавил кафедру теории механизмов и машин. С этого времени он также начал активно вести научную работу в области структуры и кинематики механизмов, а также занимался силовым анализом и исследованиями движения механизмов.
-  
-  
+            </li>
+
+            <li class="relative group">
+              <h4
+                class="flex items-center font-semibold duration-200 cursor-pointer hover:text-[#A09DBA] text-3xl hover:text-inner-shadow"
+              >
+                Корпуса
+              </h4>
+              <div
+                class="absolute -left-24 text-2xl hidden group-hover:block rounded-md bg-white shadow-lg"
+              >
+                <a class="block px-4 py-2" href="#"
+                  >Корпус на Большой Семеновской</a
+                >
+                <a class="block px-4 py-2" href="#">Корпус на Прянишникова</a>
+                <a class="block px-4 py-2" href="#"
+                  >Корпус на Павла Корчагина</a
+                >
+                <a class="block px-4 py-2" href="#">Корпус на Автозаводской</a>
+                <a class="block px-4 py-2" href="#">Корпус на Михалковской</a>
               </div>
-              <p class="person__subtitle">Роль в истории политеха:</p>
-              <p class="person__description">
-                Его работы о динамическом анализе механизмов с переменной массой нашли применение при проектировании различных машин, таких как строительно-дорожные машины и металлургические устройства.
-            </div>
-  
-          </div>
-  
-        </div>
-  
+            </li>
+          </ul>
+        </nav>
       </div>
+    </header>
 
-      <div class="grid grid_size-col-3">
+    <section
+      class="px-8 mt-24"
+      style="
+        background-image: url('../image/hero-ppl-bg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+      "
+    >
+      <div class="text-start flex flex-col justify-center min-h-screen">
+        <h1
+          class="text-5xl font-black leading-loose text-[#71506F]"
+          style="font-family: 'Spectral', serif"
+        >
+          Знаковые личности и их вклад в <br />
+          образование Политеха
+        </h1>
+        <p class="mt-4 pr-72 text-justify text-lg">
+          Добро пожаловать на нашу страницу, посвящённую важным личностям,
+          которые оставили свой след в истории
+          <span class="text-[#71506F]">ПОЛИТЕХА</span>. В нашей коллекции вы
+          найдете фотографии Мейена Христиана Христиановича, главного
+          распорядителя железнодорожных дел, Ивана Ивановича Артоболевского,
+          выдающегося советского ученого-механика и других личностей, которые
+          внесли свой вклад.
+        </p>
+      </div>
+    </section>
 
-        <div class="grid_col">
+    <main class="p-8">
+      <div class="grid grid-cols-1 gap-10">
+        <article class="flex justify-between mb-4">
+          <img
+            src="../image/1.png"
+            alt="Личность 1"
+            class="article-image size-40 object-cover"
+          />
+          <div class="article-content w-1/2 p-4">
+            <h2 class="article-title text-xl font-semibold">
+              Мейен Христиан Христианович
+            </h2>
+            <p class="article-description">
+              Прошёл путь от механика до старшего инженера. Затем его заметили
+              высшие руководители, что позволило ему продвинуться на высшие
+              посты и стать главным распорядителем железнодорожных дел. Его
+              реформы помогли существенно улучшить транспортную систему России.
+            </p>
 
-          <div class="person">
-            <img class="person__image image round-image" src="../image/3.png" src="{% static 'image/3.png' %}">
-            <p class="person__title">Виктор Степанович Черномырдин</p>
-            <p class="person__description">
-              Советский и российский государственный деятель. Председатель Совета министров Российской Федерации. В
-              честь Черномыдина был назван МАМИ.
+            <h5>Роль в истории политеха:</h5>
+            <p>
+              Основатель Комиссаровской технической школы в Москве. В сентябре
+              1865 года инженер основал Императорское Комиссаровское техническое
+              училище. С 1865 по 1873 год был директором
             </p>
           </div>
+        </article>
 
-        </div>
+        <article class="flex justify-between mb-4">
+          <img
+            src="../image/2.png"
+            alt="Личность 2"
+            class="article-image w-1/2 object-cover"
+          />
+          <div class="article-content w-1/2 p-4">
+            <h2 class="article-title text-xl font-semibold">
+              Иван Иванович Артоболевский
+            </h2>
 
-        <div class="grid_col">
+            <p class="article-description">
+              Был профессором механики. Его работа находила применения в
+              оружейном производстве, пространственных разработках, а затем
+              связана с проектированием межпланетных исследований. Получил
+              многочисленные награды, включая звание Народного ученого СССР.
+            </p>
 
-          <div class="person">
-            <img class="person__image image round-image" src="../image/4.png" src="{% static 'image/4.png' %}">
-            <p class="person__title">Михаил Васильевич Ломоносов</p>
-            <p class="person__description">
-              Первый крупный русский учёный-естествоиспытатель, известный также как полимат. 1919 год - Императорское
-              Комисаровское техническое училище было преобразовано в 1-й Московский механико- электротехнический
-              техникум имени М.В. Ломоносова.
+            <h5>Роль в истории политеха:</h5>
+            <p>
+              Гордость МИХМа-МГУИЭ - (зав. кафедрой теории машин и механизмов)
             </p>
           </div>
+        </article>
 
-        </div>
+        <article class="flex justify-between mb-4">
+          <img
+            src="../image/3.png"
+            alt="Личность 3"
+            class="article-image w-1/2 object-cover"
+          />
+          <div class="article-content w-1/2 p-4">
+            <h2 class="article-title text-xl font-semibold">
+              Виктор Степанович Черномырдин
+            </h2>
 
-        <div class="grid_col">
-
-          <div class="person">
-            <img class="person__image image round-image" src="../image/5.png" src="{% static 'image/5.png' %}" style="height: 380px;">
-            <p class="person__title">Грибов Иван Васильевич</p>
-            <p class="person__description">
-              Русский и советский учёный, профессор, доктор наук, специалист в области двигателей внутреннего сгорания,
-              первый декан автотракторного факультета и заведующий кафедрой «Эксплуатация автомобиля» МАМИ.
+            <p class="article-description">
+              Советский и российский государственный деятель. Председатель
+              Совета министров Российской Федерации. В честь Черномыдина был
+              назван МАМИ,
             </p>
           </div>
+        </article>
 
+        <article class="flex justify-between mb-4">
+          <img
+            src="../image/5.png"
+            alt="Личность 4"
+            class="article-image w-1/2 !h-auto object-cover"
+          />
+          <div class="article-content w-1/2 p-4">
+            <h2 class="article-title text-xl font-semibold">
+              Иван Васильевич Грибов
+            </h2>
+
+            <p class="article-description">
+              Русский и советский учёный профессор, доктор наук, специалист в
+              области двигателей внутреннего сгорания, первый декан
+              автотракторного факультета и заведующий кафедрой «Эксплуатация
+              автомобиля» МАМИ.
+            </p>
+          </div>
+        </article>
+
+        <article class="flex justify-between mb-4">
+          <img
+            src="../image/gubonin.png"
+            alt="Личность 5"
+            class="article-image w-1/2 !h-auto object-cover"
+          />
+          <div class="article-content w-1/2 p-4">
+            <h2 class="article-title text-xl font-semibold">
+              Пётр Ионович Губонин
+            </h2>
+
+            <p class="article-description">
+              Выдающийся предприниматель и меценат, который сыграл значительную
+              роль в развитии технического образования в России, в том числе
+              Московского Политеха (ранее — Императорского Московского
+              технического училища). Он осознавал важность подготовки инженеров
+              для промышленности и железнодорожного строительства, в которых сам
+              активно участвовал.
+            </p>
+
+            <h5>Роль в истории политеха:</h5>
+            <p>
+              Губонин поддерживал училище финансово, создавая условия для
+              подготовки квалифицированных специалистов, что способствовало
+              успеху его проектов. Его вклад в развитие Политеха стал частью его
+              миссии по модернизации России через промышленное развитие и
+              образование.
+            </p>
+          </div>
+        </article>
+
+        <article class="flex justify-between mb-4">
+          <img
+            src="../image/favorski.png"
+            alt="Личность 6"
+            class="article-image !h-auto w-1/2 object-cover"
+          />
+          <div class="article-content w-1/2 p-4">
+            <h2 class="article-title text-xl font-semibold">
+              Владимир Андреевич Фаворский
+            </h2>
+
+            <p class="article-description">
+              Выдающийся художник-график, педагог и один из самых значимых
+              мастеров книжной графики в СССР. Его связь с Московским Политехом
+              проходит через педагогическую деятельность в Московском высшем
+              художественно-техническом институте, который позже стал частью
+              университетской структуры, вошедшей в состав Московского Политеха.
+            </p>
+
+            <h5>Роль в истории политеха:</h5>
+            <p>
+              Фаворский повлиял на развитие художественного образования,
+              воспитав поколение художников и дизайнеров. Его подход к графике и
+              книгоизданию заложил основы подготовки специалистов в области
+              визуальных искусств и дизайна, что стало важной частью
+              образовательной миссии Московского Политеха.
+            </p>
+          </div>
+        </article>
+
+        <article class="flex justify-between mb-4">
+          <img
+            src="../image/nikolaenko.png"
+            alt="Личность 7"
+            class="article-image w-1/2 object-cover"
+          />
+          <div class="article-content w-1/2 p-4">
+            <h2 class="article-title text-xl font-semibold">
+              Андрей Владимирович Николаенко
+            </h2>
+
+            <p class="article-description">
+              Российский ученый и управленец, ставший первым ректором
+              Московского Политехнического университета в 2016 году. Он получил
+              образование в МАМИ, где изучал экономику и управление на
+              предприятиях машиностроения, что заложило основу его
+              профессиональной карьеры.
+            </p>
+
+            <h5>Роль в истории политеха:</h5>
+            <p>
+              Под его руководством университет значительно развился, введя
+              проектную деятельность в образовательный процесс. Студенты с
+              первого курса решали реальные технические задачи. Николаенко также
+              наладил тесное взаимодействие с промышленностью, что
+              способствовало внедрению инноваций и укреплению связей между
+              наукой и производством.
+            </p>
+          </div>
+        </article>
+
+        <article class="flex justify-between mb-4">
+          <img
+            src="../image/karunin.png"
+            alt="Личность 8"
+            class="article-image w-1/2 !h-auto object-cover"
+          />
+          <div class="article-content w-1/2 p-4">
+            <h2 class="article-title text-xl font-semibold">
+              Анатолий Леонидович Карунин
+            </h2>
+
+            <p class="article-description">
+              Ключевая фигура в истории Московского Политеха. Начав свою карьеру
+              в МАМИ в 1961 году, он с 1988 года возглавлял вуз как ректор,
+              внося значительный вклад в его развитие. Благодаря его усилиям
+              были открыты новые факультеты, внедрены десятки специальностей, а
+              вуз получил статус академии, а затем университета.
+            </p>
+
+            <h5>Роль в истории политеха:</h5>
+            <p>
+              Под его руководством Московский Политех укрепил позиции в сфере
+              научных исследований в автомобилестроении. Карунин поддерживал
+              инновации в образовании, включая дистанционное обучение, что
+              открыло новые возможности для студентов из разных регионов России.
+            </p>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <div class="left-side">
+        <div class="contact-info">
+          <img
+            src="image/Phone (1).svg"
+            src="{% static 'image/phone.png'%}"
+            alt="Phone Icon"
+          />
+          <a href="tel:+71234567890" class="text-nowrap"> +7 (123) 456-78-90</a>
         </div>
-
+        <div class="contact-info">
+          <img
+            src="image/logo.png"
+            src="{% static 'image/logo.png'%}"
+            alt="Website Logo"
+            class="size-10"
+          />
+          <a href="https://www.mospolytech.com" style="margin-left: 8px"
+            >www.mospolytech.com</a
+          >
+        </div>
+        <div class="text-footer">
+          <p style="margin-left: 3px">
+            © 2024 федеральное государственное автономное образовательное
+            учреждение высшего образования «Московский политехнический
+            университет»
+          </p>
+        </div>
       </div>
-
-    </div>
-    <div style="margin: 4rem;"></div>
-
-
-
-  </main>
-  <footer>
-    <div class="left-side">
-      <div class="contact-info">
-        <img src="image/Phone (1).svg" src="{% static 'image/phone.png'%}" alt="Phone Icon">
-        <a> +7 (123) 456-78-90</a>
+      <div class="right-side">
+        <a href="#"
+          ><img
+            src="image/Vector.svg"
+            src="{% static 'image/vk-icon.png'%}"
+            alt="ВКонтакте"
+        /></a>
+        <a href="#"
+          ><img
+            src="image/Vector (1).svg"
+            src="{% static 'image/telegram-icon.png'%}"
+            alt="Telegram"
+        /></a>
+        <a href="#"
+          ><img
+            src="image/Vector (2).svg"
+            src="{% static 'image/youtube-icon.png'%}"
+            alt="YouTube"
+        /></a> 
       </div>
-      <div class="contact-info">
-        <img src="image/logo.png" src="{% static 'image/logo.png'%}" alt="Website Logo">
-        <a href="https://www.mospolytech.com" style="margin-left: 8px;">www.mospolytech.com</a>
-      </div>
-      <div class="text-footer">
-        <p style="margin-left: 3px;">© 2024 федеральное государственное автономное образовательное учреждение высшего образования «Московский политехнический университет»</p>
-      </div>
-      
-    </div>
-    <div class="right-side">
-      <a href="https://vk.com/moscowpolytech"><img src="image/Vector.svg" src="{% static 'image/vk-icon.png'%}" alt="ВКонтакте"></a>
-      <a href="https://t.me/mospolytech"><img src="image/Vector (1).svg" src="{% static 'image/telegram-icon.png'%}" alt="Telegram"></a>
-      <a href="https://www.youtube.com/@mospolytech"><img src="image/Vector (2).svg" src="{% static 'image/youtube-icon.png'%}" alt="YouTube"></a>
-    </div>
-  </footer>
-  <script src="modal.js"></script>
+    </footer>
+  </body>
 
-</body>
+  <style>
+    .text-inner-shadow {
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5),
+        1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
+    }
 
+    .article-image {
+      width: 400px;
+      height: 300px;
+      border-radius: 30px;
+    }
+
+    .article-title {
+      color: #654461;
+      font-size: 40px;
+      text-wrap: nowrap;
+    }
+
+    .article-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }
+
+    .article-content > h5 {
+      color: rgb(79, 25, 129, 0.7);
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .article-content > p {
+      font-size: 20px;
+    }
+
+    article {
+      align-items: center;
+    }
+  </style>
 </html>
