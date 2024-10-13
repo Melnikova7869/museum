@@ -1,6 +1,3 @@
-*{
-    box-sizing: border-box;
-}
 .blok{
     display: grid;
     grid-template-columns: 2.5fr 1fr;

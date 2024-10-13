@@ -1,16 +1,13 @@
 <!doctype html>
 <!-- {% load static %} -->
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <link href="style.css" href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
   <link href="styles/footer.css" rel="stylesheet" href="{% static 'css/footer.css' %}">
   <title>Московский политехнический университет</title>
 </head>
-
 <body>
   <header>
     <div class="header">
@@ -25,7 +22,7 @@
               <li class="menu__dropdown">
                 <a class="menu__link" href="index.html">Главная</a>
               </li>
-
+    
               <li class="menu__dropdown">
                 <a class="menu__link">Вуз</a>
                 <div class="menu__dropdown-content">
@@ -36,7 +33,7 @@
                   <a class="menu__dropdown-link" href="vovv.html">Вуз во времена ВОВ</a>
                 </div>
               </li>
-
+    
               <li class="menu__dropdown">
                 <a class="menu__link">Корпуса</a>
                 <div class="menu__dropdown-content">
@@ -52,118 +49,120 @@
         </div>
       </div>
     </div>
-
   </header>
-
-
   <main>
     <section class="hero">
 
       <div class="hero__inner">
-        <h1 class="hero__title">Московский политехнический университет <span class="hero__title_1"> — многопрофильное
-            высшее учебное заведение.</h1></span>
-        <h2 class="hero__subtitle">Участник программы «Приоритет 2030».</h2>
-        <h2 class="hero__subtitle">Учредителем университета является Министерство науки и высшего образования Российской
-          Федерации</h2>
+        <h1>
+          <p class="hero__title">Московский политехнический университет<span class="hero__subtitle"> — многопрофильное высшее учебное заведение.</p>
+          <p class="hero__subtitle">Участник программы «Приоритет 2030».</p>
+          <p class="hero__subtitle">Учредителем университета является Министерство науки и высшего образования Российской Федерации</p>
+        </h1>
       </div>
 
     </section>
-    @@ -91,7 +91,7 @@ <h2 class="title">Интерактивный музей</h2>
-    </div>
-
-    <div class="detail">
-      <a href="history.html" class="detail-grid-a">
-        <div class="detail__col1">
-          <div class="content-index">
-            <div class="container-flexx">
-              <img src="image/history.svg">
-              <p class="content__title">История</p>
-            </div>
-            <div class="content__text text">
-              <p>Московский политехнический университет был основан 21 марта 2016 года путем объединения Московского
-                автомеханического института (МАМИ) и Московского государственного университета печати(МГУП). Перейдите
-                на страницу и узнайте, как был создан наш ВУЗ!</p>
-            </div>
-          </div>
+    <div class="container">
+      <div class="about">
+        <div class="about__image-container mb-2">
+          <img class="about__image image" src="image/about1.jpg" src="{% static 'image/about1.jpg' %}" alt="">
         </div>
-      </a>
-
-      <a href="model.html" class="detail-grid-a  ">
-        <div class="detail__col2">
-          <div class="content-index">
-            <div class="container-flexx">
-              <img src="image/lupa.svg">
-              <p class="content__title">А вы знали что?</p>
-            </div>
-            <div class="content__text text">
-              <p>Мы создали 3D-модели экспонатов, находящихся в разных корпусах Московского Политеха? Вы можете прямо
-                здесь увидеть, коснуться, покрутить и посмотреть печатный станок, гоночную машину.</p>
-            </div>
+        <div class="about__info-container">
+          <h2 class="title">Интерактивный музей</h2>
+          <div class="about__text mb-2">
+            <p>– это уникальное пространство, где наука, искусство и технологии переплетаются, 
+              создавая увлекательный мир современных достижений и открытий. Здесь каждый посетитель 
+              может погрузиться в захватывающий процесс изучения новых знаний и технологий через 
+              взаимодействие с экспонатами.</p>
+                    <p>С первых шагов в музее гости окунаются в мир необычных экспонатов и мультимедийных 
+              инсталляций, которые раскрывают науку с неожиданной и захватывающей стороны. Интерактивные 
+              стенды, презентации и экспозиции демонстрируют новейшие разработки, исследовательские 
+              достижения и передовые технологии, используемые, например, в Московском политехе.</p>
+              <p>Одним из самых популярных объектов выставки является интерактивная зона 
+              "Научная лаборатория", где каждый посетитель может лично проводить опыты и 
+              эксперименты. Это место, где дети и взрослые могут не только наблюдать, но и 
+              активно участвовать в создании собственных научных открытий, развивая свои навыки и интерес к науке.</p>
           </div>
-        </div>
-      </a>
-
-      <a href="persons.html" class="detail-grid-a  ">
-        <div class="detail__col3">
-          <div class="content-index">
-            <div class="container-flexx">
-              <img src="image/people.svg">
-              <p class="content__title">Знаковые личности</p>
-            </div>
-            <div class="content__text text">
-              <p>В историю Московского Политехнического университета внесли вклад такие знаменательные личности, как
-                Мейен Христиан Христианович, Иван Иванович Артоболевский и другие. Нажимай на кнопку, чтобы узнать
-                подробнее.</p>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <a href="progress.html" class="detail-grid-a  ">
-        <div class="detail__col4">
-          <div class="content-index">
-            <div class="container-flexx">
-              <img src="image/gora.svg">
-              <p class="content__title">Достижения</p>
-            </div>
-            <div class="content__text text">
-
-              <p>Московский Политехнический университет славится не только богатой историей и знаковыми личностями, но
-                и выдающимися профессорами, кандидатами наук, успешными выпускниками и их достижениями. Чтобы
-                подробнее об этом узнать, нажимай на кнопку и переходи на нашу “доску почёта”! </p>
-            </div>
-          </div>
-        </div>
-      </a>
-
-    </div>
-
-    <div class="info">
-      <div class="info__text-container">
-        <p class="info__title">Погрузись в историю</p>
-        <div class="info__text text">
-          <p>
-            Интерактивный музей предлагает увлекательные экскурсии, проводимые высококвалифицированными
-            специалистами, готовыми поделиться своими знаниями и опытом с посетителями. Каждая экскурсия
-            посвящена определенной тематике — от энергетики и механики до информационных технологий и робототехники.
-          </p>
-          <p>Одной из ключевых особенностей интерактивного музея Московского политеха является его доступность
-            и открытость для всех. Экспозиции созданы так, чтобы их было легко понять и чтобы каждый гость мог
-            стать активным участником всех интерактивных мероприятий.</p>
         </div>
       </div>
 
-      <div class="info__image-container">
-        <img class="image" src="image/photo3.jpg" src="{% static 'image/photo3.jpg' %}" alt="">
+      <div class="detail">
+        <a href="history.html" class="detail-grid-a  ">
+          <div class="detail__col1">
+            <div class="content-index">
+              <div class="container-flexx">
+                <img src="image/history.svg">
+                <p class="content__title">История</p>
+              </div>
+              <div class="content__text text">
+                <p>Московский политехнический университет был основан 21 марта 2016 года путем объединения Московского автомеханического института (МАМИ) и Московского государственного университета печати(МГУП). Перейдите на страницу и узнайте, как был создан наш ВУЗ!</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="model.html" class="detail-grid-a  ">
+          <div class="detail__col2">
+            <div class="content-index">
+              <div class="container-flexx">
+                <img src="image/lupa.svg">
+                <p class="content__title">А вы знали что?</p>
+              </div>
+              <div class="content__text text">
+                <p>Мы создали 3D-модели экспонатов, находящихся в разных корпусах Московского Политеха? Вы можете прямо здесь увидеть, коснуться, покрутить и посмотреть печатный станок, гоночную машину.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        
+        <a href="persons.html" class="detail-grid-a  ">
+          <div class="detail__col3">
+            <div class="content-index">
+              <div class="container-flexx">
+                <img src="image/people.svg">
+                <p class="content__title" >Знаковые личности</p>
+              </div>
+              <div class="content__text text">
+                <p>В историю Московского Политехнического университета внесли вклад такие знаменательные личности, как Мейен Христиан Христианович, Иван Иванович Артоболевский и другие. Нажимай на кнопку, чтобы узнать подробнее.</p>
+              </div>
+            </div>
+          </div>  
+        </a>
+        <a href="progress.html" class="detail-grid-a  ">
+          <div class="detail__col4">
+            <div class="content-index">
+              <div class="container-flexx">
+                <img src="image/gora.svg">
+                <p class="content__title">Достижения</p>
+              </div>
+              <div class="content__text text">
+                
+                <p>Московский Политехнический университет славится не только богатой историей и знаковыми личностями, но и выдающимися профессорами, кандидатами наук, успешными выпускниками и их достижениями. Чтобы подробнее об этом узнать, нажимай на кнопку и переходи на нашу “доску почёта”! </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        
+      </div>
+      <div class="info">
+        <div class="info__text-container">
+          <p class="info__title">Погрузись в историю</p>
+          <div class="info__text text">
+            <p>
+              Интерактивный музей предлагает увлекательные экскурсии, проводимые высококвалифицированными 
+			  специалистами, готовыми поделиться своими знаниями и опытом с посетителями. Каждая экскурсия 
+			  посвящена определенной тематике — от энергетики и механики до информационных технологий и робототехники.
+            </p>
+			<p>Одной из ключевых особенностей интерактивного музея Московского политеха является его доступность 
+			и открытость для всех. Экспозиции созданы так, чтобы их было легко понять и чтобы каждый гость мог 
+			стать активным участником всех интерактивных мероприятий.</p>
+          </div>
+        </div>
+        <div class="info__image-container">
+          <img class="image" src="image/photo3.jpg"src="{% static 'image/photo3.jpg' %}" alt="">
+        </div>
       </div>
     </div>
-
-
-
-    </div>
-
   </main>
-
   <footer>
     <div class="left-side">
       <div class="contact-info">
@@ -179,17 +178,13 @@
         <p style="margin-left: 3px;">© 2024 федеральное государственное автономное образовательное учреждение высшего
           образования «Московский политехнический университет»</p>
       </div>
-
+      
     </div>
     <div class="right-side">
-      <a href="https://vk.com/moscowpolytech"><img src="image/Vector.svg" src="{% static 'image/vk-icon.png'%}"
-          alt="ВКонтакте"></a>
-      <a href="https://t.me/mospolytech"><img src="image/Vector (1).svg" src="{% static 'image/telegram-icon.png'%}"
-          alt="Telegram"></a>
-      <a href="https://www.youtube.com/@mospolytech"><img src="image/Vector (2).svg"
-          src="{% static 'image/youtube-icon.png'%}" alt="YouTube"></a>
+      <a href="#"><img src="image/Vector.svg" src="{% static 'image/vk-icon.png'%}" alt="ВКонтакте"></a>
+      <a href="#"><img src="image/Vector (1).svg" src="{% static 'image/telegram-icon.png'%}" alt="Telegram"></a>
+      <a href="#"><img src="image/Vector (2).svg" src="{% static 'image/youtube-icon.png'%}" alt="YouTube"></a>
     </div>
   </footer>
 </body>
-
 </html>

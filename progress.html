@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <link href="style.css" href="{% static 'style.css' %}" rel="stylesheet" type="text/css">
-  <link href="../styles/footer.css" rel="stylesheet" href="{% static 'css/footer.css' %}">
+  <link href="styles/footer.css" rel="stylesheet" href="{% static 'css/footer.css' %}">
   <link href="style-prog.css" rel="stylesheet" href="{% static 'css/header.css' %}">
   <title>Московский политехнический университет</title>
 </head>
@@ -66,12 +65,19 @@
       <img class="img_1" src="image/blok1.png">
     </container>
 
-
     <container class="blok">
-      <br><a href="progress_2.html" class="button-a">Узнать подробнее...</a>
+      <div class="text">
+        <a href="#" class="text-a">Результаты приёмной кампании и обучения в ВШПиМ</a>
+        <p>Контрольные цифры приёма увеличились за последние 5 лет почти в полтора раза, причём как по инженерным, так и
+          по творческим специальностям. Количество поступающих и уровень их подготовки значительно выросли. Огромной
+          популярностью у победителей и призёров олимпиад школьников пользуются направления «Журналистика» и «Дизайн», а
+          также специальность «Графика».</p>
+
+        <br><a href="progress_2.html" class="button-a">Узнать подробнее...</a>
       </div>
       <img class="img_2" src="image/blok2.png">
     </container>
+
     <container class="blok">
       <div class="text">
         <a href="#" class="text-a">Программа юбилейных мероприятий, приуроченных к 100-летию Московского ВХУТЕМАСа,
@@ -81,20 +87,8 @@
         <br><a href="progress_3.html" class="button-a">Узнать подробнее...</a>
       </div>
       <img class="img_3" src="image/blok3.png">
-
-      <container class="blok">
-        <div class="text">
-          <a href="#" class="text-a">Программа юбилейных мероприятий, приуроченных к 100-летию Московского ВХУТЕМАСа,
-            наследником которого является ВШПиМ</a>
-          <p>Юбилейная издательская программа (альбом «Живопись. Графика» и книга Наталии Адаскиной «Полиграффак
-            ВХУТЕМАСа. Очерки разных лет» вышли в свет в 2020 году, программа продолжается в 2021-2022 гг.)</p>
-          <br><a href="#" class="button-a">Узнать подробнее...</a>
-        </div>
-        <img class="img_3" src="image/blok3.png">
-      </container>
-
+    </container>
   </section>
-
 
   <footer>
     <div class="left-side">
@@ -122,5 +116,4 @@
           src="{% static 'image/youtube-icon.png'%}" alt="YouTube"></a>
     </div>
   </footer>
-
 </body>
