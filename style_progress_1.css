@@ -358,9 +358,14 @@ p {
     }
 }
 
+header {
+    position: sticky;
+    top: 0;
+  }
+
 /* header */
 .header {
-    background-color: #959CE91F;
+    background-color: #E1E4E9;
     color: #4A2D41;
     height: 88px;
 }
