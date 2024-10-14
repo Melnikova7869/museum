@@ -19,7 +19,8 @@
       <div class="container">
         <div class="header__inner">
           <div class="header__logo">
-            <img class="header__logo-img" src="image/ttt.svg" src="{% static 'image/logo.png' %}" alt="Website Logo">
+            <img class="header__logo-img" src="image/logo_vovv.svg" src="{% static 'image/logo.png' %}"
+              alt="Website Logo">
           </div>
           <div class="header__title">Музей Московского Политеха</div>
           <nav class="header__nav">
@@ -123,8 +124,10 @@
     <section>
       <div class="container">
         <div class="div_for_button">
-          <button id="toggleButton" class="section-h">Подробная история Московского политехнического университета</button>
-       <!--  <span id="tooltip" class="tooltip">Нажми на меня</span> -->
+          <button id="toggleButton" class="section-h">
+            Подробная история Московского политехнического университета
+            <span class="hover-text">Нажми на меня</span>
+        </button>        
         </div>
         <div class="window" id="myDiv">
           <div class="section-text">
@@ -252,12 +255,13 @@
   <footer>
     <div class="left-side">
       <div class="contact-info">
-        <img src="image/Phone (1).svg" src="{% static 'image/phone.png'%}" alt="Phone Icon">
+        <img src="image/Phone (1).svg" src="{% static 'image/phone.png'%}" style="height: 30px;" alt="Phone Icon">
         <a> +7 (123) 456-78-90</a>
       </div>
       <div class="contact-info">
-        <img src="image/logo.png" src="{% static 'image/logo.png'%}" alt="Website Logo">
-        <a href="https://www.mospolytech.com" style="margin-left: 8px;">www.mospolytech.com</a>
+        <img class="contact-info-logo" src="image/logo_vovv.svg" src="{% static 'image/logo_vovv.svg'%}"
+          alt="Website Logo">
+        <a href="https://www.mospolytech.com" style="margin-left: 10px; padding-top: 2px;">www.mospolytech.com</a>
       </div>
       <div class="text-footer">
         <p style="margin-left: 3px;">© 2024 федеральное государственное автономное образовательное учреждение высшего
@@ -266,11 +270,12 @@
 
     </div>
     <div class="right-side">
-      <a href="#"><img src="image/Vector.svg" src="{% static 'image/vk-icon.png'%}" alt="ВКонтакте"></a>
-      <a href="#"><img src="image/Vector (1).svg" src="{% static 'image/telegram-icon.png'%}" alt="Telegram"></a>
-      <a href="#"><img src="image/Vector (2).svg" src="{% static 'image/youtube-icon.png'%}" alt="YouTube"></a>
-      <a href="mailto:назвпочты@почта.com"><img src="image/Vector (3).svg" src="{% static 'image/mail-icon.png'%}"
-          alt="Email"></a>
+      <a href="https://vk.com/moscowpolytech"><img src="image/Vector.svg" src="{% static 'image/vk-icon.png'%}"
+          alt="ВКонтакте"></a>
+      <a href="https://t.me/mospolytech"><img src="image/Vector (1).svg" src="{% static 'image/telegram-icon.png'%}"
+          alt="Telegram"></a>
+      <a href="https://www.youtube.com/@mospolytech"><img src="image/Vector (2).svg"
+          src="{% static 'image/youtube-icon.png'%}" alt="YouTube"></a>
     </div>
   </footer>
   <script src="script.js"></script>

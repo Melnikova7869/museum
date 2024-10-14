@@ -1,16 +1,13 @@
 <!doctype html>
 <!-- {% load static %} -->
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <link href="style.css" href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
   <link href="styles/footer.css" rel="stylesheet" href="{% static 'css/footer.css' %}">
   <title>Московский политехнический университет</title>
 </head>
-
 <body>
   <header>
     <div class="header">
@@ -52,17 +49,16 @@
         </div>
       </div>
     </div>
-
   </header>
-
-
   <main>
     <section class="hero">
 
       <div class="hero__inner">
-        <h1 class="hero__title">Московский политехнический университет — многопрофильное высшее учебное заведение.</h1>
-        <p class="hero__subtitle">Участник программы «Приоритет 2030».
-          Учредителем университета является Министерство науки и высшего образования Российской Федерации</p>
+        <h1>
+          <p class="hero__title">Московский политехнический университет<span class="hero__subtitle"> — многопрофильное высшее учебное заведение.</p>
+          <p class="hero__subtitle">Участник программы «Приоритет 2030».</p>
+          <p class="hero__subtitle">Учредителем университета является Министерство науки и высшего образования Российской Федерации</p>
+        </h1>
       </div>
 
     </section>
@@ -104,7 +100,6 @@
             </div>
           </div>
         </a>
-
         <a href="model.html" class="detail-grid-a  ">
           <div class="detail__col2">
             <div class="content-index">
@@ -132,7 +127,6 @@
             </div>
           </div>  
         </a>
-
         <a href="progress.html" class="detail-grid-a  ">
           <div class="detail__col4">
             <div class="content-index">
@@ -149,7 +143,6 @@
         </a>
         
       </div>
-
       <div class="info">
         <div class="info__text-container">
           <p class="info__title">Погрузись в историю</p>
@@ -164,30 +157,26 @@
 			стать активным участником всех интерактивных мероприятий.</p>
           </div>
         </div>
-
         <div class="info__image-container">
           <img class="image" src="image/photo3.jpg"src="{% static 'image/photo3.jpg' %}" alt="">
         </div>
       </div>
-
-
-
     </div>
-
   </main>
-
   <footer>
     <div class="left-side">
       <div class="contact-info">
-        <img src="image/Phone (1).svg" src="{% static 'image/phone.png'%}" alt="Phone Icon">
-        <a style="width: 400px;"> +7 (123) 456-78-90</a>
+        <img src="image/Phone (1).svg" src="{% static 'image/phone.png'%}" style="height: 30px;" alt="Phone Icon">
+        <a> +7 (123) 456-78-90</a>
       </div>
       <div class="contact-info">
-        <img src="image/logo.png" src="{% static 'image/logo.png'%}" alt="Website Logo">
-        <a href="https://www.mospolytech.com" style="margin-left: 8px;">www.mospolytech.com</a>
+        <img class="contact-info-logo" src="image/logo_vovv.svg" src="{% static 'image/logo_vovv.svg'%}"
+          alt="Website Logo">
+        <a href="https://www.mospolytech.com" style="margin-left: 10px; padding-top: 2px;">www.mospolytech.com</a>
       </div>
       <div class="text-footer">
-        <p style="margin-left: 3px;">© 2024 федеральное государственное автономное образовательное учреждение высшего образования «Московский политехнический университет»</p>
+        <p style="margin-left: 3px;">© 2024 федеральное государственное автономное образовательное учреждение высшего
+          образования «Московский политехнический университет»</p>
       </div>
       
     </div>
@@ -195,7 +184,6 @@
       <a href="#"><img src="image/Vector.svg" src="{% static 'image/vk-icon.png'%}" alt="ВКонтакте"></a>
       <a href="#"><img src="image/Vector (1).svg" src="{% static 'image/telegram-icon.png'%}" alt="Telegram"></a>
       <a href="#"><img src="image/Vector (2).svg" src="{% static 'image/youtube-icon.png'%}" alt="YouTube"></a>
-      <a href="mailto:назвпочты@почта.com"><img src="image/Vector (3).svg" src="{% static 'image/mail-icon.png'%}" alt="Email"></a>
     </div>
   </footer>
 </body>
