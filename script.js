@@ -19,3 +19,21 @@ toggleButton.addEventListener('mouseover', () => {
 toggleButton.addEventListener('mouseout', () => {
     tooltip.style.display = 'none'; // Скрыть подсказку
 }); */
+
+document.addEventListener('DOMContentLoaded', () => {
+    const textBlocks = document.querySelectorAll('.text');
+  
+    textBlocks.forEach((block) => {
+      const paragraph = block.querySelector('.text_p_hover');
+      if (paragraph) {
+        block.addEventListener('mouseenter', () => {
+          paragraph.classList.add('text-hover');
+        });
+  
+        block.addEventListener('mouseleave', () => {
+          paragraph.classList.remove('text-hover');
+        });
+      }
+    });
+  });
+  

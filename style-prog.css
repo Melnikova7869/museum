@@ -1,27 +1,36 @@
 .blok{
     display: grid;
     grid-template-columns: 2.5fr 1fr;
-    background-color: #e9eaf3;
+    background-color: #EEEEEE;
     padding: 30px;
     height: 450px; 
-    border: black 1px solid;
+    border: 1px solid rgba(0, 0, 0, 0.15);
 }
+
+.text {
+    margin: auto;
+}
+
 .text-a{
-    font-size: 35px;
-    color: #4A2D41;
+    font-size: 3rem;
+    color: black;
     font-weight: 700;
 }
-.text p{
-    margin-top: 15px;
-    font-size: 22px;
+.text_p_hover{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 2.2rem;
     color: black;
-    font-weight: 400;
-
 }
+
+.text-hover {
+    font-weight: 570;
+  }
+
 .button-a{
-    margin-left: 40px;
-    color:#4A2D41;  
-    font-size: 30px;
+    color: #4B6EB9;  
+    font-size: 2.4rem;
+    text-decoration: underline;
 }
 .blok img {
     margin-left: 35px;

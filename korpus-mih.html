@@ -6,8 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="style_progress_1.css" href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
-    <!-- <link href="style.css" rel="stylesheet" href="{% static 'css/footer.css' %}"> -->
+    <link href="style.css" href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+    <link href="styles/footer.css" rel="stylesheet" href="{% static 'css/footer.css' %}">
+
+
     <title>Московский политехнический университет</title>
 </head>
 
@@ -17,8 +19,8 @@
             <div class="container">
                 <div class="header__inner">
                     <div class="header__logo">
-                        <img class="header__logo-img" src="image/logo_1.svg" src="{% static 'image/logo.png' %}"
-                            alt="Website Logo">
+                        <img class="header__logo-img" src="image/polytech_logo_main_black 1.svg"
+                            src="{% static 'image/logo.png' %}" alt="Website Logo">
                     </div>
                     <div class="header__title">Музей Московского Политеха</div>
                     <nav class="header__nav">
@@ -58,51 +60,18 @@
         </div>
     </header>
 
-    <body>
+    <main>
         <div class="container">
-            <br>
-            <div class="text-progress">
-                <div class="topic">
-                    Проект «Ассоциаты», модель центра ускоренной подготовки (2+2) в рамках ФЦП «Кадры для цифровой
-                    экономики» по заказу Минцифры
-                </div>
-                <div class="texts">
-                    <p>
-                        Московский политехнический университет был основан 21 марта 2016 года путем объединения
-                        Московского
-                        автомеханического института (МАМ И) и Московского государственного университета печати(МГУП).
-                        В данном разделе вы сможете узнать историю университета, посетить музей, посвященный его
-                        деятельности.
-                    </p>
-                    <p><img class="blok1" src="image/blok1.png"></p>
-                    <p>
-                        Двухлетние программы Ассоциатов (Associate’s degree) реализуются высшими учебными заведениями
-                        как
-                        переходные (трансферные) ступени в бакалавриате или как полноценные программы для второго
-                        высшего
-                        образования.
-                        Прикладной ассоциат соответствует 5 квалификационному уровню европейской рамки квалификаций
-                        (EQF) и
-                        национальной рамки квалификаций, используемой при разработке профессиональных стандартов.
-                        В настоящее время в России нет образовательных программ, которые напрямую соотносятся с данным
-                        уровнем квалификации.
-                    </p>
-                    <p>
-                        В Московском Политехе с 2014 года реализуются экспериментальные образовательные программы, в
-                        рамках
-                        которых существенным образом изменена структура учебного плана бакалавров, уделяется большое
-                        внимание проектной деятельности, проводятся практико-ориентированные экзамены.
-                        Это позволяет за два года сформировать у многих студентов достаточный уровень квалификации для
-                        работы в индустрии на джуниорских позициях.
-                    </p>
-                </div>
+            <h1 class="korpusM_title_bold">Корпус на Михалковской</h1>
+            <div class="korpusM_div">
+                <p class="korpusM_decription_bold">Здесь находится Институт графики и искусства книги имени В.А.
+                    Фаворского, где студенты осваивают графику, дизайн, искусство шрифта и книжное искусство.</p>
+                <img class="korpusM_image" src="image/korpusM_image.png">
             </div>
-            <!-- <div class="back-img">
-            <a href="progress.html"><img src="image/Component 8.svg" height="80" width="80"></a>
-        </div> -->
-            <br>
+            <p class="korpusM_adress_bold">Адрес: г. Москва, ул. Михалковская, 7</p>
         </div>
-    </body>
+    </main>
+
     <footer>
         <div class="left-side">
             <div class="left-side-top">
@@ -113,7 +82,7 @@
                 </div>
                 <div class="contact-info">
                     <!-- <img class="contact-info-logo" src="image/logo_vovv.svg" src="{% static 'image/logo_vovv.svg'%}"
-                alt="Website Logo"> -->
+            alt="Website Logo"> -->
                     <a href="https://www.mospolytech.com"
                         style="padding-top: 10px; font-size: 23px;">www.mospolytech.com</a>
                 </div>
@@ -135,3 +104,11 @@
                     src="{% static 'image/youtube-icon.png'%}" alt="YouTube"></a>
         </div>
     </footer>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
