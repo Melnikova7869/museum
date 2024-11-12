@@ -120,7 +120,7 @@ html,
 body {
   font-size: 62.5%;
   box-sizing: border-box;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Verdana', sans-serif;
   max-width: 2100px;
   margin: 0;
 }
@@ -1006,6 +1006,7 @@ iframe {
 .korpusM_image {
   width: 800px;
   margin-left: 15px;
+  border-radius: 30px;
 }
 
 .korpusM_decription_bold {
