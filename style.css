@@ -205,7 +205,6 @@ body {
   background-color: white;
   border: 2px;
   background-color: #E1E4E9;
-  height: 67rem;
 }
 
 .content-index {
@@ -213,7 +212,7 @@ body {
   border-radius: 3rem;
   background-color: white;
   border: 2px solid #4B6EB9;
-  height: 38rem;
+  height: 43rem;
 }
 
 .section-h {
@@ -264,11 +263,15 @@ body {
 
 .content__title {
   color: black;
-  font-size: 3.7rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
   padding-top: 20px;
   padding-bottom: 20px;
   font-weight: bold;
+}
+
+.gl-img {
+  padding-right: 10px;
 }
 
 .vovv_title {
@@ -1021,6 +1024,11 @@ iframe {
   margin-top: 35px;
   margin-bottom: 135px;
   font-weight: 700;
+  color: black;
+}
+
+.korpusM_adress_bold:hover {
+  color: #4B6EB9;
 }
 
 footer {
@@ -1060,9 +1068,44 @@ footer {
     width: 800px;
     margin-top: 10px;
   }
-  .right-side img {
-    height: 48px;
-    margin-left: 10px;
+
+  .free-icon-phone-call {
+    width: 33px;
+  }
+
+  .free-icon-phone-call:hover path {
+    fill: #4B6EB9; 
+  }
+
+  .https:hover {
+    color: #4B6EB9;
+  }
+
+  .free-icon-vk {
+    height: 52px;
+    margin: 7px;
+  }
+
+  .free-icon-vk:hover path {
+    fill: #4B6EB9; 
+  }
+
+  .free-icon-telegram {
+    height: 52px;
+    margin: 7px;
+  }
+
+  .free-icon-telegram:hover path {
+    fill: #4B6EB9; 
+  }
+
+  .free-icon-youtube {
+    height: 52px;
+    margin: 7px;
+  }
+
+  .free-icon-youtube:hover path {
+    fill: #E63246; 
   }
   
   .contact-info-logo {

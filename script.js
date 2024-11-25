@@ -36,4 +36,32 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-  
+
+
+/* document.getElementById("mapLink").openMap = function () {
+  window.open("https://yandex.ru/maps/-/CDxKzPLb", "_blank");
+  };
+ */
+/* document.getElementById("mapLink").onclick = function() {
+  window.open("https://yandex.ru/maps/-/CDxKzPLb", "_blank");
+  }; */
+
+function openMap() {
+  window.open("https://yandex.ru/maps/-/CDxKzPLb", "_blank");
+  }
+
+function openMap2() {
+  window.open("https://yandex.ru/maps/-/CDxK7H5s", "_blank");
+    }
+
+function openMap3() {
+  window.open("https://yandex.ru/maps/-/CDxK7LnW", "_blank");
+    }
+
+function openMap4() {
+  window.open("https://yandex.ru/maps/-/CDxK7P2y", "_blank");
+    }
+
+function openMap5() {
+  window.open("https://yandex.ru/maps/-/CDxoIEz0", "_blank");
+    }
