@@ -120,7 +120,7 @@ html,
 body {
   font-size: 62.5%;
   box-sizing: border-box;
-  font-family: 'Space Grotesk', sans-serif;
+/*   font-family: 'Space Grotesk', sans-serif; */
   max-width: 2100px;
   margin: 0;
 }
@@ -388,7 +388,7 @@ body {
 }
 
 .header-content__content {
-  font-family: 'Raleway', sans-serif;
+/*   font-family: 'Raleway', sans-serif; */
   font-size: 1.2rem;
   line-height: 1.4;
   color: rgb(0, 0, 0, 0.7);
@@ -428,7 +428,7 @@ header {
   line-height: 31px;
   letter-spacing: -0.015em;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+/*   font-family: 'Raleway', sans-serif; */
 }
 
 .header__logo-img {
@@ -577,7 +577,7 @@ header {
 
 .hero2__lead {
 
-    font-family: 'Raleway-SemiBold', sans-serif;
+/*     font-family: 'Raleway-SemiBold', sans-serif; */
     font-size: 1.2rem;
     line-height: 1.4;
     color: rgb(0, 0, 0, 0.7);
@@ -647,7 +647,7 @@ header {
     padding-bottom: 1rem;
     margin-bottom: 0;
     font-size: 45px;
-    font-family: 'Space Grotesk', sans-serif;
+/*     font-family: 'Space Grotesk', sans-serif; */
     color: rgba(98, 81, 162, 1);
     font-weight: 700;
     line-height: 1.1;
@@ -655,7 +655,7 @@ header {
 }
 
 .person__description {
-    font-family: 'Raleway', sans-serif;
+/*     font-family: 'Raleway', sans-serif; */
     color: rgba(0, 0, 0, 0.7);
     font-size: 23px;
     line-height: 34px;
@@ -663,7 +663,7 @@ header {
 
 .person__subtitle {
     font-size: 30px;
-    font-family: 'Space Grotesk', sans-serif;
+/*     font-family: 'Space Grotesk', sans-serif; */
     color: rgba(98, 81, 162, 1);
     font-weight: 700;
     line-height: 38px;
@@ -702,7 +702,7 @@ header {
 .step__title {
     color: white;
     font-size: 45px;
-    font-family: 'Raleway', sans-serif;
+/*     font-family: 'Raleway', sans-serif; */
     text-transform: uppercase;
     text-shadow: -2px 2px 2px blueviolet;
     padding-top: 1.6rem;
@@ -712,7 +712,7 @@ header {
 }
 
 .step__body {
-    font-family: 'Raleway', sans-serif;
+/*     font-family: 'Raleway', sans-serif; */
     font-size: 23px;
     line-height: 30px;
     color: rgba(0, 0, 0, .69);
@@ -740,14 +740,14 @@ header {
 
 .step-hor__title {
     color: rgba(189, 174, 244, 1);
-    font-family: 'Raleway', sans-serif;
+/*     font-family: 'Raleway', sans-serif; */
     font-weight: bold;
     font-size: 45px;
     text-shadow: -2px 2px 2px rgb(0, 0, 0, 0.6);
 }
 
 .step-hor__content {
-    font-family: 'Raleway', sans-serif;
+/*     font-family: 'Raleway', sans-serif; */
     color: rgba(0, 0, 0, 0.61);
     font-size: 25px;
     width: 600px;

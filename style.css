@@ -108,7 +108,8 @@
 }
 
 .button:hover {
-  background-color: #4b6eb9;;
+  background-color: #4b6eb9;
+  ;
 }
 
 .button-lg {
@@ -217,7 +218,7 @@ body {
 
 .section-h {
   font-size: 2.5rem;
-/*   position: relative;  */
+  /*   position: relative;  */
   background-color: white;
   padding: 20px;
   border-radius: 30px;
@@ -226,7 +227,6 @@ body {
 .section-h-a {
   color: #4B6EB9;
   text-decoration: underline;
-  color: #4B6EB9;
 }
 
 /* .tooltip {
@@ -391,7 +391,7 @@ body {
 }
 
 .header-content__content {
-  font-family: 'Raleway', sans-serif;
+  /*   font-family: 'Raleway', sans-serif; */
   font-size: 1.2rem;
   line-height: 1.4;
   color: rgb(0, 0, 0, 0.7);
@@ -431,7 +431,7 @@ header {
   line-height: 31px;
   letter-spacing: -0.015em;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  /*   font-family: 'Raleway', sans-serif; */
 }
 
 .header__logo-img {
@@ -472,12 +472,14 @@ header {
 }
 
 .menu__link:hover {
-  color: #4b6eb9;;
+  color: #4b6eb9;
+  ;
 }
 
 
 .menu__link:hover {
-  color: #4b6eb9;;
+  color: #4b6eb9;
+  ;
 }
 
 .menu__dropdown-content {
@@ -508,7 +510,7 @@ header {
   min-height: 700px;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-                       rgba(0, 0, 0, 0.5)), url(/image/bc-main.png);
+      rgba(0, 0, 0, 0.5)), url(/image/bc-main.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -535,6 +537,7 @@ header {
   font-size: 3rem;
   margin-top: 0;
 }
+
 .hero__subtitle {
   color: white;
   font-size: 2.7rem;
@@ -555,14 +558,14 @@ header {
 
 #toggleButton .hover-text {
   display: none;
-    position: absolute;
-    top: -40px;
-    left: -40px;
-    border-radius: 30px;
-    background-color: #333;
-    color: white;
-    padding: 7px;
-    font-size: 22px;
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  border-radius: 30px;
+  background-color: #333;
+  color: white;
+  padding: 7px;
+  font-size: 22px;
 }
 
 #toggleButton:hover .hover-text {
@@ -576,7 +579,7 @@ header {
 }
 
 .hero2__lead {
-  font-family: 'Raleway-SemiBold', sans-serif;
+  /*   font-family: 'Raleway-SemiBold', sans-serif; */
   font-size: 2.4rem;
   line-height: 1.6;
   width: 700px;
@@ -636,7 +639,7 @@ header {
   padding-bottom: 1rem;
   margin-bottom: 0;
   font-size: 45px;
-  font-family: 'Space Grotesk', sans-serif;
+  /*   font-family: 'Space Grotesk', sans-serif; */
   color: rgba(98, 81, 162, 1);
   font-weight: 700;
   line-height: 1.1;
@@ -644,7 +647,7 @@ header {
 }
 
 .person__description {
-  font-family: 'Raleway', sans-serif;
+  /*   font-family: 'Raleway', sans-serif; */
   color: rgba(0, 0, 0, 0.7);
   font-size: 23px;
   line-height: 34px;
@@ -652,7 +655,7 @@ header {
 
 .person__subtitle {
   font-size: 30px;
-  font-family: 'Space Grotesk', sans-serif;
+  /*   font-family: 'Space Grotesk', sans-serif; */
   color: rgba(98, 81, 162, 1);
   font-weight: 700;
   line-height: 38px;
@@ -691,7 +694,7 @@ header {
 .step__title {
   color: white;
   font-size: 45px;
-  font-family: 'Raleway', sans-serif;
+  /*   font-family: 'Raleway', sans-serif; */
   text-transform: uppercase;
   text-shadow: -2px 2px 2px blueviolet;
   padding-top: 1.6rem;
@@ -701,10 +704,11 @@ header {
 }
 
 .step__body {
-  font-family: 'Raleway', sans-serif;
+  /*   font-family: 'Raleway', sans-serif; */
   font-size: 23px;
   line-height: 30px;
-  color: #4A2D41;;
+  color: #4A2D41;
+  ;
 }
 
 .step-hor {
@@ -714,7 +718,8 @@ header {
 }
 
 .step-hor__block_1 {
-  border-right: 10px solid #D9D9D9;;
+  border-right: 10px solid #D9D9D9;
+  ;
 }
 
 .step-hor__title_1 {
@@ -722,7 +727,8 @@ header {
 }
 
 .step-hor__title-inner_2 {
-  border-bottom: 10px solid #D9D9D9;;
+  border-bottom: 10px solid #D9D9D9;
+  ;
   padding-left: 5rem;
   padding-bottom: 1rem;
   padding-right: 4rem;
@@ -730,14 +736,14 @@ header {
 
 .step-hor__title {
   color: black;
-  font-family: 'Raleway', sans-serif;
+  /*   font-family: 'Raleway', sans-serif; */
   font-weight: bold;
   font-size: 3.3rem;
   text-shadow: -2px 2px 2px rgb(0, 0, 0, 0.6);
 }
 
 .step-hor__content {
-  font-family: 'Raleway', sans-serif;
+  /*   font-family: 'Raleway', sans-serif; */
   color: black;
   font-size: 2.4rem;
   width: 600px;
@@ -803,7 +809,7 @@ header {
 }
 
 .cover__button {
-  font-family: Yuji Syuku;
+  /*   font-family: Yuji Syuku; */
   font-size: 2.3rem;
   color: #71506F;
   top: 200px;
@@ -997,18 +1003,58 @@ iframe {
   margin-bottom: 20px;
 }
 
-.korpusM_title_bold {
-  font-size: 4rem;
-  margin-bottom: 35px;
-  margin-top: 35px;
+.korpusM_div_img {
+  background-image: url(image/Rectangle\ 30.png);
+  height: 575px;
 }
+
+.korpusAv_div_img {
+  background-image: url(image/png_av.png);
+  height: 575px;
+}
+
+.korpusPr_div_img {
+  background-image: url(image/Rectangle\ -PR.png);
+  height: 575px;
+}
+
+.korpusBs_div_img {
+  background-image: url(image/korpusBS__image.png);
+  height: 575px;
+  background-size: cover;
+}
+
+.korpusPk_div_img {
+  background-image: url(image/pk234.png);
+  height: 575px;
+  background-size: cover;
+}
+
+.korpusM_title_bold {
+  font-size: 6rem;
+  padding-top: 220px;
+  padding-bottom: 60px;
+  padding-left: 70px;
+}
+
+.korpusM_title_bold_h2 {
+  font-size: 4rem;
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+
 .korpusM_div {
   display: flex;
+  gap: 20rem;
+  padding-bottom: 40px;
 }
 
 .korpusM_image {
-  width: 800px;
-  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 560px;
+  height: 500px;
   border-radius: 30px;
 }
 
@@ -1031,93 +1077,127 @@ iframe {
   color: #4B6EB9;
 }
 
+
+/* .button-for-av {
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button-for-av:hover {
+  background-color: #0056b3;
+} */
+
+.section-h-a2 {
+  text-decoration: underline;
+  color: #4B6EB9;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.button-for-av {
+  padding-top: 20px;
+  background-color: white;
+}
+
+
 footer {
-    background-color: #1e1e1e;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  .left-side {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    align-items: start;
-  }
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
 
-  .right-side {
-    padding-top: 280px;
-    padding-right: 20px;
-  }
-  
-  .left-side p, a {
-    font-size: 23px;
-    text-decoration: none;
-    color: white;
-    margin: auto;
-  }
-  
-  .contact-info {
-    display: flex;
-    align-content: items-center;
-    margin-left: 0;
-    text-decoration: none;
-  }
-  .text-footer {
-    width: 800px;
-    margin-top: 10px;
-  }
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: start;
+}
 
-  .free-icon-phone-call {
-    width: 33px;
-  }
+.right-side {
+  padding-top: 280px;
+  padding-right: 20px;
+}
 
-  .free-icon-phone-call:hover path {
-    fill: #4B6EB9; 
-  }
+.left-side p,
+a {
+  font-size: 23px;
+  text-decoration: none;
+  color: white;
+  margin: auto;
+}
 
-  .https:hover {
-    color: #4B6EB9;
-  }
+.contact-info {
+  display: flex;
+  align-content: items-center;
+  margin-left: 0;
+  text-decoration: none;
+}
 
-  .free-icon-vk {
-    height: 52px;
-    margin: 7px;
-  }
+.text-footer {
+  width: 800px;
+  margin-top: 10px;
+}
 
-  .free-icon-vk:hover path {
-    fill: #4B6EB9; 
-  }
+.free-icon-phone-call {
+  width: 33px;
+}
 
-  .free-icon-telegram {
-    height: 52px;
-    margin: 7px;
-  }
+.free-icon-phone-call-a:hover{
+  color: #4B6EB9;
+}
 
-  .free-icon-telegram:hover path {
-    fill: #4B6EB9; 
-  }
+.free-icon-phone-call:hover path {
+  fill: #4B6EB9;
+}
 
-  .free-icon-youtube {
-    height: 52px;
-    margin: 7px;
-  }
+.https:hover {
+  color: #4B6EB9;
+}
 
-  .free-icon-youtube:hover path {
-    fill: #E63246; 
-  }
-  
-  .contact-info-logo {
-    height: 30px;
-  }
+.free-icon-vk {
+  height: 52px;
+  margin: 7px;
+}
 
-  .left-side-top {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  
+.free-icon-vk:hover path {
+  fill: #4B6EB9;
+}
+
+.free-icon-telegram {
+  height: 52px;
+  margin: 7px;
+}
+
+.free-icon-telegram:hover path {
+  fill: #4B6EB9;
+}
+
+.free-icon-youtube {
+  height: 52px;
+  margin: 7px;
+}
+
+.free-icon-youtube:hover path {
+  fill: #E63246;
+}
+
+.contact-info-logo {
+  height: 30px;
+}
+
+.left-side-top {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .img_footer_logo {
   padding-top: 100px;
   padding-bottom: 20px;
-} 
+}
