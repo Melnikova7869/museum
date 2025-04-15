@@ -1,4 +1,5 @@
-@import 'src/css/stylesheet.css';
+@import "/src/css/stylesheet.css";
+
 
 .header_text_p-history {
     font-size: 1.4rem;

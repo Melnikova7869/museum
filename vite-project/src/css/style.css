@@ -1,5 +1,5 @@
-@import 'src/css/stylesheet.css';
-@import 'src/css/history.css';
+@import "/src/css/stylesheet.css";
+@import '/src/css/history.css';
 
 * {
   padding: 0;

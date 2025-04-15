@@ -238,7 +238,25 @@ header {
   height: 2px;
   width: 126px;
   margin-top: 10px;
+  position: relative; 
+  overflow: hidden; /* Чтобы псевдоэлемент не создавал визуальных артефактов */
 }
+
+.a-line::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0; /* Фиксируем внизу блока */
+  width: 0;
+  height: 2px;
+  background-color: #ffffff; /* Можно поменять цвет */
+  transition: width 0.3s ease-out;
+}
+
+.a-line:hover::after {
+  width: 100%; /* Расширяется при наведении */
+}
+
 
 .a-line-white {
   background-color: white;
