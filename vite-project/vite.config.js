@@ -8,8 +8,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: '.index.html',    // Главная страница
-        history: './public/history.html', // Страница history.html
-        progress: './public/progress.html'
+        history: '.history.html', // Страница history.html
+        progress: '.progress.html',
+        footer: '.footer.html'
         // Добавьте другие страницы, если они есть
       }
     },
