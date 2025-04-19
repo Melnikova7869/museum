@@ -1,0 +1,82 @@
+body {
+    background-color: #EEEEEE;
+}
+
+.progress-a {
+    text-decoration: none;
+    color: black;
+}
+
+.progress-div-flex-element {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    padding-right: 50px;
+    width: 1200px;
+    height: 400px;
+}
+/* 
+.progress-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+ */
+.progress-flex:hover .progress-div-flex-element {
+    background-color: #EEEEEE;
+}
+
+.progress-flex:hover {
+    height: 626px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.progress-div-flex-element-text {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.progress-div-flex-element-hover {
+    opacity: 0;
+    max-height: 0;
+/*     overflow: hidden; */
+    transition: opacity 0.3s ease, max-height 0.8s ease, margin-top 0.3s ease;
+    color: black;
+    margin-top: 0;
+}
+
+.progress-flex:hover .progress-div-flex-element-hover {
+    opacity: 0.7;
+    color: black;
+    font-size: 1.7rem;
+    font-family: 'VerdanaCLassic', sans-serif;
+    width: 1100px;
+    padding-left: 50px;
+  /*   padding-bottom: 30px; */
+    /* text-align: center; */
+}
+
+
+.progress-div-flex-element-h3 {
+    font-size: 2.2rem;
+    padding-bottom: 20px;
+    /* font-weight: 600; */
+    font-family: 'Gilroy-Extrabold', sans-serif;
+    width: 540px;
+}
+
+.progress-div-flex-element-p {
+    font-size: 1.7rem;
+    padding-bottom: 30px;
+    font-family: 'VerdanaCLassic', sans-serif;
+    width: 540px;
+}
+
+.progress-div-flex-element-img {
+    width: 520px;
+    height: 300px;
+    margin: auto 0;
+}
