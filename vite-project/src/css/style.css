@@ -156,7 +156,7 @@ header {
   width: 540px;
   font-size: 2.7rem;
   margin-bottom: 2.7rem;
-/*   font-family: 'Gilroy-Extrabold', sans-serif; */
+  /*   font-family: 'Gilroy-Extrabold', sans-serif; */
 }
 
 .header_text_p {
@@ -184,7 +184,7 @@ header {
 .container-block-black-a {
   color: white;
   text-decoration: none;
-}
+} 
 
 .container-block-history {
   background: white;
@@ -203,8 +203,8 @@ header {
 .container-block-history-p1 {
   font-size: 2.2rem;
   padding-bottom: 20px;
-/*   font-weight: 600; */
-  font-family: 'Gilroy-Extrabold'; 
+  /*   font-weight: 600; */
+  font-family: 'Gilroy-Extrabold';
 }
 
 .container-block-history-p2 {
@@ -221,8 +221,8 @@ header {
 .container-block-history-div-p1 {
   font-size: 2.2rem;
   padding-bottom: 20px;
-/*   font-weight: 600; */
-  font-family: 'Gilroy-Extrabold'; 
+  /*   font-weight: 600; */
+  font-family: 'Gilroy-Extrabold';
 }
 
 .container-block-history-div-p2 {
@@ -332,8 +332,8 @@ header {
 .container-block-vov-p1 {
   font-size: 2.2rem;
   padding-bottom: 20px;
-/*   font-weight: 600; */
-  font-family: 'Gilroy-Extrabold'; 
+  /*   font-weight: 600; */
+  font-family: 'Gilroy-Extrabold';
 }
 
 .container-block-vov-p2 {
@@ -358,8 +358,8 @@ header {
 .container-block-korpus-p1 {
   font-size: 2.2rem;
   padding-bottom: 20px;
-/*   font-weight: 600; */
-  font-family: 'Gilroy-Extrabold'; 
+  /*   font-weight: 600; */
+  font-family: 'Gilroy-Extrabold';
 }
 
 .container-block-korpus-p2 {
@@ -384,7 +384,7 @@ header {
 .container-block-znak-p1 {
   font-size: 2.2rem;
   padding-bottom: 20px;
-/*   font-weight: 600; */
+  /*   font-weight: 600; */
   font-family: 'Gilroy-Extrabold';
 }
 
@@ -405,7 +405,7 @@ header {
 .container-block-awards-p1 {
   font-size: 2.2rem;
   padding-bottom: 20px;
-/*   font-weight: 600; */
+  /*   font-weight: 600; */
   font-family: 'Gilroy-Extrabold';
 }
 
@@ -429,7 +429,7 @@ header {
   width: 476px;
   margin-left: 90px;
   padding-top: 13rem;
-/*   font-weight: 600; */
+  /*   font-weight: 600; */
   font-family: 'Gilroy-Extrabold';
 }
 
@@ -439,7 +439,7 @@ header {
   width: 496px;
   margin-left: 90px;
   padding-bottom: 9rem;
-/*   font-weight: 600; */
+  /*   font-weight: 600; */
   font-family: 'Gilroy-Extrabold';
 }
 
@@ -448,7 +448,7 @@ header {
   font-size: 3.3rem;
   width: 476px;
   margin-left: 90px;
-/*   font-weight: 600; */
+  /*   font-weight: 600; */
   font-family: 'Gilroy-Extrabold';
 }
 
@@ -530,23 +530,21 @@ footer {
   color: #EEEEEE;
   display: flex;
   justify-content: space-between;
+  height: 460px;
   padding: 20px;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
+  font-family: 'VerdanaCLassic', sans-serif;
 }
 
 .left-side {
   display: flex;
   flex-direction: column;
-  gap: 2em;
-  align-items: start;
+  gap: 1rem;
   font-size: 23px;
   text-decoration: none;
-  margin-left: 90px;
 }
 
 .right-side {
-  padding-right: 20px;
-  padding-top: 320px;
   display: flex;
   align-items: baseline;
   gap: 4.2rem;
@@ -560,6 +558,13 @@ a {
   opacity: 0.3;
 } */
 
+.footer-contact-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .contact-info {
   display: flex;
   align-content: items-center;
@@ -570,11 +575,13 @@ a {
 .text-footer {
   width: 800px;
   margin-top: 10px;
+  font-size: 1.7rem;
 }
 
 
 .free-icon-phone-call-a {
   opacity: 0.3;
+  font-size: 1.7rem;
 }
 
 .free-icon-phone-call-a:hover {
@@ -587,6 +594,7 @@ a {
   font-size: 23px;
   color: white;
   opacity: 0.3;
+  font-size: 1.7rem;
 }
 
 .https:hover {
@@ -595,35 +603,49 @@ a {
 }
 
 .free-icon-vk {
-  height: 52px;
+  width: 28px;
   margin: 7px;
-  /*   opacity: 0.3; */
+  opacity: 0.3; 
 }
 
 .free-icon-vk:hover path {
   fill: #4B6EB9;
+}
+
+.free-icon-vk:hover {
   opacity: 1;
 }
 
 .free-icon-telegram {
-  height: 52px;
-  /*   margin: 7px;
-  opacity: 0.3; */
+  width: 28px;
+  margin-bottom: 7px;
+  opacity: 0.3;
 }
 
 .free-icon-telegram:hover path {
   fill: #4B6EB9;
+}
+
+.free-icon-telegram:hover {
   opacity: 1;
 }
 
+svg {
+  width: 100%;
+  height: 100%;
+}
+
 .free-icon-youtube {
-  height: 52px;
+  width: 32px;
   margin: 7px;
-  /*   opacity: 0.3; */
+  opacity: 0.3; 
 }
 
 .free-icon-youtube:hover path {
   fill: #E63246;
+}
+
+.free-icon-youtube:hover {
   opacity: 1;
 }
 

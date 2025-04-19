@@ -1,35 +1,12 @@
-fetch('header.html')
-    .then(response => response.text())
-    .then(html => document.getElementById('header').innerHTML = html);
+    // footer 
 
-// Загрузка подвала...
 fetch('footer.html')
     .then(response => response.text())
     .then(html => document.getElementById('footer').innerHTML = html);
 
-/* 
-const slider = document.querySelector('.slider');
-const prevButton = document.querySelector('.prev-button');
-const nextButton = document.querySelector('.next-button');
-const slides = document.querySelectorAll('.slide');
 
-let slideIndex = 0;
-const slideWidth = 1221; // Ширина одного слайда (3 изображения)
-const totalSlides = slides.length;
 
-prevButton.addEventListener('click', () => {
-    slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
-    updateSlider();
-});
-
-nextButton.addEventListener('click', () => {
-    slideIndex = (slideIndex + 1) % totalSlides;
-    updateSlider();
-});
-
-function updateSlider() {
-    slider.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
-} */
+    // слайдер 
 
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
