@@ -7,9 +7,9 @@ export default defineConfig({
     // Настройки Rollup (для многостраничности)
     rollupOptions: {
       input: {
-        main: './index.html',    // Главная страница
-        history: './history.html', // Страница history.html
-        progress: './progress.html'
+        main: '.index.html',    // Главная страница
+        history: './public/history.html', // Страница history.html
+        progress: './public/progress.html'
         // Добавьте другие страницы, если они есть
       }
     },
