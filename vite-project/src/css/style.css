@@ -237,11 +237,32 @@ header {
 }
 
 .container-block-a {
+  position: relative;
   font-size: 2rem;
-/*   font-weight: 600; */
-  font-family: 'Gilroy-Extrabold'; 
+  font-family: 'Gilroy-Extrabold';
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
 
+.container-block-a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  right: 0;
+  height: 2px;
+  width: 100%;
+  background-color: currentColor;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.container-block-a:hover::after,
+.container-block-a:focus::after {
+  width: 0;
+  right: 0;
+}
+
+/* 
 .a-line {
   background-color: #1E1E1E;
   height: 2px;
@@ -249,7 +270,6 @@ header {
   margin-top: 10px;
   position: relative;
   overflow: hidden;
-  /* Чтобы псевдоэлемент не создавал визуальных артефактов */
 }
 
 .a-line::after {
@@ -257,26 +277,23 @@ header {
   position: absolute;
   right: 0;
   bottom: 0;
-  /* Фиксируем внизу блока */
   width: 0;
   height: 2px;
   background-color: #ffffff;
-  /* Можно поменять цвет */
   transition: width 0.3s ease-out;
 }
 
 .a-line:hover::after {
   width: 100%;
-  /* Расширяется при наведении */
 }
 
-
-.a-line-white {
+ */
+/* .a-line-white {
   background-color: white;
   height: 2px;
   width: 126px;
   margin-top: 10px;
-}
+} */
 
 .container-block-vov {
   background: #1E1E1E;
