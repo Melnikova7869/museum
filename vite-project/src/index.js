@@ -1,4 +1,4 @@
-    // footer 
+// footer 
 
 /* fetch('footer.html')
     .then(response => response.text())
@@ -6,7 +6,23 @@
 
 
  */
-    // слайдер 
+// слайдер 
+
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+      // Ждём 4 секунды перед началом исчезновения
+      setTimeout(() => {
+        preloader.style.opacity = '0';
+        // Потом ждём ещё 0.5 секунды, чтобы завершить анимацию и скрыть элемент
+        setTimeout(() => {
+          preloader.style.display = 'none';
+        }, 500); // время затухания
+      }, 2000); // Задержка до начала исчезновения
+    }
+  });
+  
+  
 
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
@@ -30,17 +46,18 @@ const swiper = new Swiper('.swiper', {
             updateCounter(this);
         }
     }
-  });
-  
-  function updateCounter(swiper) {
+});
+
+function updateCounter(swiper) {
     const current = document.querySelector('.current-slide');
     const total = document.querySelector('.total-slides');
-  
-    // swiper.realIndex — актуальный индекс (с 0), поэтому +1
-    current.textContent = swiper.realIndex + 1;
-    total.textContent = swiper.slides.length - 2;
-  }
-  
-  
-  
-  
+
+    const formatNumber = (num) => (num < 10 ? '0' + num : num);
+
+    current.textContent = formatNumber(swiper.realIndex + 1);
+    total.textContent = formatNumber(swiper.slides.length - 1);
+}
+
+
+
+
