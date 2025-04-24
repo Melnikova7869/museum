@@ -1,0 +1,207 @@
+/* Общие настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gilroy-Medium', sans-serif;
+    line-height: 1.6;
+    color: #fff; /* Белый цвет текста для лучшей видимости на темном фоне */
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: relative;
+    background-color: transparent; /* Прозрачный черный фон */
+    z-index: 10; /* Убедитесь, что шапка всегда поверх всего */
+}
+
+.header__logo img {
+    width: 20%;
+    height: 20%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.header__menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.header__menu li {
+    margin-left: 20px;
+}
+
+.header__menu a {
+    text-decoration: none;
+    color: #fff; /* Белый цвет ссылок */
+    font-weight: bold;
+}
+
+/* Главный блок */
+.main-section {
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0;
+    color: #fff; /* Белый цвет текста */
+    height: 40em;
+}
+
+.content-main-section {
+    position: relative;
+    z-index: 1; /* Убедитесь, что текст находится поверх изображения */
+}
+
+.main-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.main-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../image/bc-main.png") center center / cover no-repeat;
+    filter: brightness(70%); /* Сделать изображение темнее */
+    z-index: -1; /* Поместить фон за всеми элементами */
+}
+
+/* Блоки с информацией о корпусах */
+.campus-section {
+    padding: 50px 0;
+}
+
+.campus-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.campus-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.campus-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.campus-item p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.campus-item button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.red {
+    background-color: #FF0000;
+    color: #fff;
+}
+
+/* Блоки с категориями */
+.categories-section {
+    padding: 50px 0;
+}
+
+.category-block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.category-item {
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.purple {
+    background-color: #8e44ad;
+}
+
+.red {
+    background-color: #e74c3c;
+}
+
+.green {
+    background-color: #2ecc71;
+}
+
+.yellow {
+    background-color: #f1c40f;
+}
+
+/* Подвал */
+.footer {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.footer__logo img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.footer__info p {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.footer__socials {
+    margin-top: 20px;
+}
+
+.footer__socials a {
+    margin: 0 10px;
+}
+
+.footer__socials img {
+    width: 30px;
+    height: 30px;
+}
