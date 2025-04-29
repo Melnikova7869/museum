@@ -10,7 +10,8 @@ export default defineConfig({
         main: '.index.html',    // Главная страница
         footer: '.footer.html',
         history: '.history.html', // Страница history.html
-        progress: '.progress.html'
+        progress: '.progress.html',
+        persons: '.persons.html'
         // Добавьте другие страницы, если они есть
       }
     },
