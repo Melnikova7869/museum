@@ -383,6 +383,7 @@ header {
 
 .container-block-vov-p2 {
   font-size: 1.7rem;
+  font-family: 'VerdanaClassic', sans-serif;
   padding-bottom: 20px;
 }
 
@@ -401,13 +402,14 @@ header {
 }
 
 .container-block-korpus-p1 {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   padding-bottom: 20px;
   /*   font-weight: 600; */
   font-family: 'Gilroy-Extrabold', sans-serif;
 }
 
 .container-block-korpus-p2 {
+  font-family: 'VerdanaClassic', sans-serif;
   font-size: 1.7rem;
   padding-bottom: 30px;
 }
@@ -435,6 +437,7 @@ header {
 
 .container-block-znak-p2 {
   font-size: 1.7rem;
+  font-family: 'VerdanaClassic', sans-serif;
 }
 
 .container-block-awards {
@@ -456,6 +459,7 @@ header {
 
 .container-block-awards-p2 {
   font-size: 1.7rem;
+  font-family: 'VerdanaClassic', sans-serif;
 }
 
 
@@ -637,7 +641,7 @@ a {
 
 
 .free-icon-phone-call-a {
-  opacity: 0.3;
+  opacity: 0.5;
   font-size: 1.7rem;
 }
 
@@ -650,7 +654,7 @@ a {
   padding-top: 10px;
   font-size: 23px;
   color: white;
-  opacity: 0.3;
+  opacity: 0.5;
   font-size: 1.7rem;
 }
 
@@ -662,7 +666,7 @@ a {
 .free-icon-vk {
   width: 28px;
   margin: 7px;
-  opacity: 0.3; 
+  opacity: 0.5; 
 }
 
 .free-icon-vk:hover path {
@@ -676,7 +680,7 @@ a {
 .free-icon-telegram {
   width: 28px;
   margin-bottom: 7px;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .free-icon-telegram:hover path {
@@ -695,7 +699,7 @@ svg {
 .free-icon-youtube {
   width: 32px;
   margin: 7px;
-  opacity: 0.3; 
+  opacity: 0.5; 
 }
 
 .free-icon-youtube:hover path {
