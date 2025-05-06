@@ -7,11 +7,11 @@ export default defineConfig({
     // Настройки Rollup (для многостраничности)
     rollupOptions: {
       input: {
-        main: '.index.html',    // Главная страница
-        footer: '.footer.html',
-        history: '.history.html', // Страница history.html
-        progress: '.progress.html',
-        persons: '.persons.html'
+        main: '/vite-project/index.html',    // Главная страница
+        footer: '/vite-project/footer.html',
+        history: '/vite-project/history.html', // Страница history.html
+        progress: '/vite-project/progress.html',
+        persons: '/vite-project/persons.html'
         // Добавьте другие страницы, если они есть
       }
     },
