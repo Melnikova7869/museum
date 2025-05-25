@@ -11,6 +11,7 @@ export default defineConfig({
         footer: '/vite-project/footer.html',
         history: '/vite-project/history.html', // Страница history.html
         progress: '/vite-project/progress.html',
+        buildings: '/vite-project/buildings.html',
         persons: '/vite-project/persons.html'
         // Добавьте другие страницы, если они есть
       }
