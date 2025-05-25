@@ -1,22 +1,20 @@
 import { defineConfig } from 'vite';
+import { resolve } from 'path';
 
 export default defineConfig({
-  // Базовые настройки
-  base: '/', // Важно для корректных путей при деплое
+  base: '/',
   build: {
-    // Настройки Rollup (для многостраничности)
     rollupOptions: {
       input: {
-        main: '/vite-project/index.html',  
-        buildings: '/vite-project/buildings.html',  // Главная страница
-        footer: '/vite-project/footer.html',
-        history: '/vite-project/history.html', // Страница history.html
-        progress: '/vite-project/progress.html',
-        persons: '/vite-project/persons.html'
-        // Добавьте другие страницы, если они есть
+        main: resolve(__dirname, 'index.html'),
+        footer: resolve(__dirname, 'footer.html'),
+        history: resolve(__dirname, 'history.html'),
+        progress: resolve(__dirname, 'progress.html'),
+        buildings: resolve(__dirname, 'buildings.html'),
+        persons: resolve(__dirname, 'persons.html')
       }
     },
-    outDir: 'dist', // Папка сборки
-    emptyOutDir: true // Очищать папку перед сборкой
+    outDir: 'dist',
+    emptyOutDir: true
   }
 });
